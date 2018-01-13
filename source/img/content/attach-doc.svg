@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="58" viewBox="0 0 46 58">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#1F8ADC" d="M0 1.007C0 .45.452 0 .993 0H32l14 14v42.998c0 .554-.455 1.002-1.004 1.002H1.004C.449 58 0 57.55 0 56.993V1.007z"/>
+        <text fill="#E7EDF2" font-family="SegoeUI-Bold, Segoe UI" font-size="16" font-weight="bold" transform="translate(13 22)">
+            <tspan x="2" y="17">W</tspan>
+        </text>
+        <path fill="#156CAE" d="M32 0v14.05h14z"/>
+    </g>
+</svg>
