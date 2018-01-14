@@ -22,15 +22,17 @@
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-webp": "^2.3.0",
+    "node-sass": "^4.7.2",
     "postcss-import": "^11.0.0",
     "postcss-url": "^7.3.0",
     "posthtml-include": "^1.1.0",
+    "rebuild-node-sass": "^1.1.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "^0.1.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'source/scss/**/*.scss' --syntax scss",
+    "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp html && gulp style",
     "start": "npm run build && gulp serve"
@@ -46,7 +48,7 @@
     "*.js",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/css/**/*.css"
+    "source/css/**/*.scss"
   ],
   "engines": {
     "node": "8.2"

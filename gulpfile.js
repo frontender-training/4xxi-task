@@ -22,8 +22,6 @@ gulp.task('styles', function() {
     .pipe(gp.sourcemaps.init())                                  // инициируем карту кода
     .pipe(gp.sass())                                             // компилируем в CSS
     .pipe(gp.postcss([                                           // делаем постпроцессинг
-      importcss(),                                               // импортируем пути
-      urlcss(),                                                  // правит пути
       autoprefixer({ browsers: ['last 2 version'] }),            // автопрефиксирование
       mqpacker({ sort: true })                                   // объединение медиавыражений
     ]))
