@@ -7,11 +7,21 @@ html {
 }
 
 body {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
 
-  background-color: #008000;
-  font-family: 'HelveticaNeue', 'Helvetica', sans-serif;
+  background-color: $bg-color;
+  background-image: url('../img/decoration/pat.png');
+  background-position: 0 0;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $warm-grey;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {

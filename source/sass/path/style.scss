@@ -1,2 +1,8 @@
-@import url('../base/normalize.scss');
-@import url('../base/scaffolding.scss');
+@import '../base/normalize.scss';
+@import '../base/fonts.scss';
+@import '../base/outline.scss';
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+@import '../base/scaffolding.scss';
+@import '../blocks/header.scss';
+@import '../blocks/app-promo.scss';
