@@ -11,7 +11,7 @@
     <header class="app-promo">
       <div class="app-promo__wrap">
         <a class="app-promo__logo" href="https://app.centrallo.com">
-          <img class="app-promo__img" src="img/content/logo-promo.svg" width="32" height="32">
+          <img class="app-promo__img" src="img/content/logo-promo.svg" width="32" height="32" alt="Centrallo">
         </a>
         <div class="app-promo__description">
           <span class="app-promo__name">Centrallo</span>
@@ -25,34 +25,141 @@
         </button>
       </div>
     </header>
+
     <header class="header">
       <div class="header__wrap">
         <a class="header__logo" href="index.html">
-          <img src="img/content/logo.png" width="133" height="30">
+          <img src="img/content/logo.png" width="93" height="27" alt="Centrallo">
         </a>
-        <nav class="main-nav">
-          <div class="user-nav">
-            <a class="user-nav__link" href="#">
-            </a>
-          </div>
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--signup" href="signup.html" aria-label="Sign up">
+                Sign up <span class="user-nav__signup">for free</span>
+              </a>
+              <span class="user-nav__note"> — Start publishing in minutes</span>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--login" href="login.html" aria-label="Log in">Log in</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="notes">
+        <h1 class="notes__title visually-hidden">Записи блога</h1>
+        <ul class="notes__list">
+          <li class="notes__item">
+            <article class="post">
+              <h2 class="post__title">Post-release checklist 2015.02.26</h2>
+              <div class="post__wrap">
+                <div class="checklist">
+                  <label class="checklist__item">
+                    <input type="checkbox" class="checklist__checkbox">
+                    Referral Accepted and Invited invitations not sorted by A-Z
+                  </label>
+                  <label class="checklist__item">
+                    <input type="checkbox" class="checklist__checkbox" checked>
+                  RInbox shows me 242 items - that includes Done items; Only show me active
+                  </label>
+                  <label class="checklist__item">
+                    <input type="checkbox" class="checklist__checkbox" checked>
+                  Inbox defaults to show done items - it should not
+                  </label>
+                  <label class="checklist__item">
+                    <input type="checkbox" class="checklist__checkbox">
+                  Lists default to Show Done - they should not
+                  </label>
+                  <label class="checklist__item">
+                    <input type="checkbox" class="checklist__checkbox">
+                  Recent view should sort by Created and show no Done items
+                  </label>
+                </div>
+                <div class="post__data">
+                  <span class="post__date">2h ago</span>
+                  <div class="social-share">
+                    <a class="social-share__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="social-share__img" width="16" height="16">
+                    </a>
+                    <a class="social-share__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/url.svg" alt="Share link" class="social-share__img" width="20" height="20">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="notes__item">
+            <article class="post">
+              <h2 class="post__title visually-hidden">Checklists</h2>
+              <div class="post__wrap">
+                <div class="post__data">
+                  <ul class="list-checklist">
+                    <li class="list-checklist__name list-checklist__name--important">
+                      <button class="list-checklist__show" type="button" aria-label="Click me and show checklist">Children</button>
+                      <!-- <div class="checklist">
+                        Content checklist
+                      </div> -->
+                      <div class="list-checklist__desc">
+                        <span class="list-checklist__count-items">12 items</span>
+                        <span class="list-checklist__date">7h ago</span>
+                      </div>
+                    </li>
+                    <li class="list-checklist__name list-checklist__name">
+                      <button class="list-checklist__show" type="button" aria-label="Click me and show checklist">The longest title in the world</button>
+                      <!-- <div class="checklist">
+                        Content checklist
+                      </div> -->
+                      <div class="list-checklist__desc">
+                        <span class="list-checklist__count-items">3 items</span>
+                        <span class="list-checklist__date">Mar 13</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="post__date">2h ago</div>
+                  <div class="social-share">
+                    <a class="social-share__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="social-share__img" width="16" height="16">
+                    </a>
+                    <a class="social-share__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/url.svg" alt="Share link" class="social-share__img" width="20" height="20">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="notes__item">
+            <article class="post">
+              <div class="post__wrap">
+               </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__wrap">
+        <div class="footer__copyright">
+          © Centrallo 2015
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Privacy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Terms</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com" aria-label="Twitter">
-            </a>
+            <a class="social__link" href="https://twitter.com" aria-label="Twitter"><!-- svg icon --></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://facebook.com" aria-label="Facebook">
-            </a>
+            <a class="social__link" href="https://facebook.com" aria-label="Facebook"><!-- svg icon --></a>
           </li>
-
         </ul>
       </div>
     </footer>
