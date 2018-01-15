@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Centrallo - Notes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -62,20 +62,20 @@
                     Referral Accepted and Invited invitations not sorted by A-Z
                     </label>
                     <label class="checklist__item">
-                    <input type="checkbox" class="checklist__checkbox" checked>
-                  RInbox shows me 242 items - that includes Done items; Only show me active
+                      <input type="checkbox" class="checklist__checkbox" checked>
+                      RInbox shows me 242 items - that includes Done items; Only show me active
                     </label>
                     <label class="checklist__item">
                       <input type="checkbox" class="checklist__checkbox" checked>
-                  Inbox defaults to show done items - it should not
+                      Inbox defaults to show done items - it should not
                     </label>
                     <label class="checklist__item">
                       <input type="checkbox" class="checklist__checkbox">
-                  Lists default to Show Done - they should not
+                      Lists default to Show Done - they should not
                     </label>
                     <label class="checklist__item">
-                    <input type="checkbox" class="checklist__checkbox">
-                  Recent view should sort by Created and show no Done items
+                      <input type="checkbox" class="checklist__checkbox">
+                      Recent view should sort by Created and show no Done items
                     </label>
                   </div>
                 </div>
@@ -95,9 +95,10 @@
           </li>
           <li class="notes__item">
             <article class="daily-records">
-              <h2 class="daily-records__title visually-hidden">Checklists</h2>
+              <h2 class="daily-records__title visually-hidden">Notes 2015.03.12</h2>
               <div class="daily-records__wrap">
-                <ul class="one-day-notes">
+
+                <ul class="one-day-notes one-day-notes">
                    <li class="one-day-notes__item one-note">
                       <button class="one-note__show" type="button" aria-label="Click me and show checklist">Children</button>
                       <!-- <div class="checklist">
@@ -108,7 +109,8 @@
                         <span class="one-note__date">7h ago</span>
                       </div>
                    </li>
-                   <li class="one-day-notes__item note">
+
+                   <li class="one-day-notes__item one-note">
                      <button class="one-note__show" type="button" aria-label="Click me and show checklist">The longest title in the world</button>
                       <!-- <div class="checklist">
                         Content checklist
@@ -119,6 +121,7 @@
                       </div>
                    </li>
                 </ul>
+
                 <div class="daily-records__info">
                   <span class="daily-records__update">2h ago</span>
                   <div class="social-share">
@@ -130,9 +133,9 @@
                     </a>
                   </div>
                 </div>
+
               </div>
             </article>
-
           </li>
           <li class="notes__item">
             <article class="daily-records">
@@ -144,8 +147,92 @@
           </li>
           <li class="notes__item">
             <article class="daily-records">
+              <h2 class="daily-records__title visually-hidden">Notes 2015.01.12</h2>
               <div class="daily-records__wrap">
-                <p>The Dark Knight Rises is a 2012 British-American superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer. Featuring the DC Comics character Batman, the film is the final installment in Nolan's Batman film trilogy, and the sequel to Batman Begins (2005) and The Dark Knight (2008). Christian Bale reprises the lead role of Bruce Wayne/Batman, with a returning cast of allies: Michael Caine as Alfred Pennyworth, Gary Oldman as James Gordon, and Morgan Freeman as Lucius Fox. The film introduces Selina Kyle (Anne Hathaway), a sly, morally ambiguous cat burglar, and Bane (Tom Hardy), a revolutionary bent on destroying Gotham City who forces an older Bruce Wayne to come out of retirement and become Batman again.</p>
+
+                <ul class="one-day-notes">
+                  <li class="one-day-notes__item one-note">
+                    <div class="one-note__text">
+                      <p>The Dark Knight Rises is a 2012 British-American superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer. Featuring the DC Comics character Batman, the film is the final installment in Nolan's Batman film trilogy, and the sequel to Batman Begins (2005) and The Dark Knight (2008). Christian Bale reprises the lead role of Bruce Wayne/Batman, with a returning cast of allies: Michael Caine as Alfred Pennyworth, Gary Oldman as James Gordon, and Morgan Freeman as Lucius Fox. The film introduces Selina Kyle (Anne Hathaway), a sly, morally ambiguous cat burglar, and Bane (Tom Hardy), a revolutionary bent on destroying Gotham City who forces an older Bruce Wayne to come out of retirement and become Batman again.</p>
+                    </div>
+                    <div class="one-note__media">
+                      <ul class="photos">
+                        <li class="photos__list">
+                          <picture class="photos__image">
+                            <img src="img/content/photo-3@2x.png" alt="photo-3">
+                          </picture>
+                        </li>
+                        <li class="photos__list">
+                          <picture class="photos__image">
+                            <img src="img/content/photo-4@2x.png" alt="photo-4">
+                          </picture>
+                        </li>
+                        <li class="photos__list">
+                          <picture class="photos__image">
+                            <img src="img/content/photo-5@2x.png" alt="photo-5">
+                          </picture>
+                        </li>
+                        <li class="photos__list">
+                          <picture class="photos__image">
+                            <img src="img/content/photo-6@2x.png" srcset="img/content/photo-6@3x.png 1.8x" alt="photo-6">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="one-day-notes__item one-note">
+                    <div class="one-note__contacts contacts" id="map">
+                      <picture class="contacts__map">
+                        <img class="contacts__map" src="img/content/map.svg" alt="Google map" width="264" height="176">
+                      </picture>
+                      <div class="contacts__info">
+                        <p class="contacts__title">Merry Bergtraum High School for Business Cariers</p>
+                        <p class="contacts__desc contacts__desc--adress">
+                          <span>411 Pearl St, NY 10038</span>
+                          <span>United States of America</span>
+                        </p>
+                        <a  class="contacts__link" href="https://www.google.com/maps">Watch location on Google Maps</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="one-day-notes__item one-note">
+                    <ul class="one-note__attachment attachments">
+                      <li class="attachments__item">
+                        <a class="attachments__link" href="https://dropbox.com" aria-label="Download file from dropbox">
+                          <img src="img/content/db.svg" alt="Download file from dropbox" class="attachments__img">
+                        </a>
+                        <span class="attachments__filename">logo_final.eps</span>
+                      </li>
+                      <li class="attachments__item">
+                        <a class="attachments__link" href="https://skydrive.com" aria-label="Download file from skydrive.">
+                          <img src="img/content/skydrive.svg" alt="Download file from skydrive" class="attachments__img">
+                        </a>
+                        <span class="attachments__filename">photos_summer.zip</span>
+                      </li>
+                      <li class="attachments__item">
+                        <a class="attachments__link" href="#" aria-label="Download file word document">
+                          <img src="img/content/attach-doc.svg" alt="Download file word document" class="attachments__img">
+                        </a>
+                        <span class="attachments__filename">work_…hard.doc</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <div class="daily-records__info">
+                  <span class="daily-records__update">Jan 12</span>
+                  <div class="social-share">
+                    <a class="social-share__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="social-share__img" width="16" height="16">
+                    </a>
+                    <a class="social-share__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/url.svg" alt="Share link" class="social-share__img" width="20" height="20">
+                    </a>
+                  </div>
+                </div>
+
               </div>
             </article>
           </li>
