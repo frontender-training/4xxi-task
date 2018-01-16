@@ -1,0 +1,15 @@
+.footer {
+  height: 64px;
+  background-color: $bgc-dark-grey;
+}
+
+.footer__wrap {
+  @include wrap;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  display: none;
+  text-transform: uppercase;
+  color: $cool-grey-three;
+}
