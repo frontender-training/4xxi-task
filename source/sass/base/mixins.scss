@@ -35,4 +35,25 @@
   height: $height;
   background-color: $bg-color;
   color: $color;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: #ffffff;
+  }
+}
+
+@mixin elem ($width, $height) {
+  content: ' ';
+  width: $width;
+  height: $height;
+  position: absolute;
+  z-index: 2;
 }
