@@ -1,0 +1,26 @@
+.sharing-buttons {
+  @include wrap;
+  justify-content: space-between;
+}
+
+.sharing-buttons__link {
+  @include btn;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 9px 11px;
+  margin-bottom: 20px;
+
+  &--follow {
+    background-color: $dark-blue;
+    color: #ffffff;
+  }
+
+  span {
+    display: none;
+  }
+
+  &:last-of-type,
+  &:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+}

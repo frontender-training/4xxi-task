@@ -1,15 +1,36 @@
+@mixin wrap {
+  height: inherit;
+  width: 296px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+@mixin text ($font-size: 13px, $line-height: 13px, $color: $dark-grey) {
+  font-size: $font-size;
+  color: $color;
+  line-height: $line-height;
+}
+
 @mixin text-small ($font-size: 13px, $color: #ffffff){
   font-size: $font-size;
   color: $color;
+  line-height: 13px;
 }
 
-@mixin btn ($width: 140px, $height: 32px, $bg-color: #37b7ec, $color: #ffffff) {
+@mixin btn ($width: 140px, $height: 32px, $bg-color: #ffffff, $color: #37b7ec) {
   display: block;
   text-align: center;
   border-radius: 3px;
-  font-size: 12px;
-  line-height: 12px;
-  padding: 7px 10px;
   width: $width;
   height: $height;
   background-color: $bg-color;

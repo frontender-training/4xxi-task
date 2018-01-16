@@ -12,8 +12,9 @@ body {
   padding: 0;
 
   background-color: $bg-color;
-  background-image: url('../img/decoration/pat.png');
+  background-image: url('../../img/decoration/pat.png');
   background-position: 0 0;
+  background-repeat: repeat;
   font-family: $font;
   font-size: 16px;
   line-height: 16px;
