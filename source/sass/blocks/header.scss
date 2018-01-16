@@ -1,4 +1,15 @@
+.header {
+  height: 48px;
+  background-color: $bgc-dark-grey;
+}
+
 .header__wrap {
-  padding-left: 12px;
-  padding-right: 12px;
+  @include wrap;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.header__logo {
+  width: 108px;
+  height: 29;
 }

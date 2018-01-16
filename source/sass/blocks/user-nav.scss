@@ -1,0 +1,34 @@
+.user-nav {
+  text-transform: uppercase;
+
+}
+
+.user-nav__list {
+  @include list-reset;
+}
+
+.user-nav__item {
+  margin-right: 28px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.user-nav__link {
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 13px;
+
+  &--signup {
+    color: $dark-blue;
+  }
+}
+
+.user-nav__signup {
+  display: none;
+}
+
+.user-nav__note {
+  display: none;
+}

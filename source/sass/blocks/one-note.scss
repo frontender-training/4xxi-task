@@ -1,0 +1,22 @@
+.one-note__show {
+  @include text(17px, 18px, $dark-grey);
+  width: auto;
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  font-family: $font;
+  margin-bottom: 11px;
+}
+
+.one-note__mark {
+  margin-right: 7px;
+}
+
+.one-note__desc {
+  padding-left: 24px;
+  color: $cool-grey-two;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

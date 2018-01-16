@@ -1,0 +1,29 @@
+.user-info {
+  margin-bottom: 18px;
+}
+
+.user-info__wrap {
+  @include wrap;
+  padding-top: 20px;
+}
+
+.user-info__profile {
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.user-info__avatar {
+  margin-right: 13px;
+}
+
+.user-info__name {
+  margin: 0;
+  color: $dark-grey;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.user-info__social {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav__link {
+  @include text-small($color: $cool-grey-three);
+  text-transform: uppercase;
+}
