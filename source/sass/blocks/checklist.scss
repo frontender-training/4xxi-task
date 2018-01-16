@@ -1,0 +1,87 @@
+.checklist {
+  margin-bottom: 24px;
+}
+
+.checklist__item {
+  display: block;
+  position: relative;
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.checklist__checkbox {
+  display: none;
+
+  &:checked + .checklist__option::before {
+    background-color: $dodger-blue;
+    border-color: $dodger-blue;
+  }
+
+  &:hover:checked + .checklist__option::before,
+  &:focus:checked + .checklist__option::before {
+    background-color: $azure;
+    border-color: $azure;
+  }
+
+  &:active:checked + .checklist__option::before {
+    background-color: $mid-blue;
+    border-color: $mid-blue;
+  }
+
+  &:checked + .checklist__option::after {
+    display: block;
+  }
+
+  &:disabled + .checklist__option::before {
+    border-color: $white-two;
+  }
+
+  &:disabled + .checklist__option {
+    color: $warm-grey;
+  }
+
+  &:disabled:checked + .checklist__option::before {
+    background-color: rgba(0, 174, 255, 0.5 );
+    border: none;
+  }
+}
+
+.checklist__option {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 21px;
+  padding-left: 24px;
+
+  &::before {
+    @include elem(14px, 14px);
+    border-radius: 2px;
+    border: solid 2px #b8b8b8;
+    top: 3px;
+    left: 0;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    cursor: pointer;
+    border-color: $azure;
+  }
+
+  &:active::before {
+    border-color: $mid-blue;
+  }
+
+  &::after {
+    @include elem(8.6px, 5.9px);
+    top: 5.5px;
+    left: 2.6px;
+    transform: rotate(-45deg);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12);
+    border: solid 1.5px #ffffff;
+    border-top: 0;
+    border-right: 0;
+    display: none;
+  }
+}

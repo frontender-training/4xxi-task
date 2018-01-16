@@ -13,6 +13,11 @@
   &--follow {
     background-color: $dark-blue;
     color: #ffffff;
+
+    &:active {
+      background-color: #ffffff;
+      color: $dark-blue;
+    }
   }
 
   span {

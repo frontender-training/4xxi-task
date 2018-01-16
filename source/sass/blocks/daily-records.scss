@@ -1,0 +1,28 @@
+.daily-records__wrap {
+  border-radius: 5px;
+  background-color: #f7f8f8;
+  padding: 14px 16px 24px 16px;
+
+  p {
+    line-height: 26px;
+    margin: 0;
+  }
+}
+
+.daily-records__title {
+  @include text(19px, 23px, $dark-grey);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 0 3px;
+}
+
+.daily-records__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.daily-records__update {
+  color: $pinkish-grey;
+}
