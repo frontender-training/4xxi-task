@@ -1,0 +1,22 @@
+.notes {
+  margin-bottom: 50px;
+}
+
+.notes__wrap {
+  @include wrap;
+}
+
+.notes__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.notes__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
