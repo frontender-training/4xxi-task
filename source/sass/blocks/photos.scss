@@ -2,4 +2,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 264px;
+}
+
+.photos__item {
+  margin-bottom: 6px;
+  margin-right: 4px;
+  width: min-content;
+  max-width: 264px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.photos__image {
+  display: block;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
 }

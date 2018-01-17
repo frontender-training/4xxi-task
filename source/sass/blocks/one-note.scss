@@ -1,3 +1,7 @@
+.one-note {
+  margin-bottom: 22px;
+}
+
 .one-note__show {
   @include text(17px, 18px, $dark-grey);
   width: auto;
@@ -9,7 +13,7 @@
   margin-bottom: 11px;
 }
 
-.one-note__mark {
+.one-note__icon {
   margin-right: 7px;
 }
 
@@ -19,4 +23,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.one-note__text {
+  margin-bottom: 5px;
+}
+
+.one-note__text p {
+    line-height: 25px;
+    margin: 0;
 }

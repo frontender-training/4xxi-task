@@ -1,0 +1,32 @@
+.contacts__map {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contacts__title {
+  @include text (15px, 21px, $dark-grey);
+  margin-top: 0;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.contacts__desc {
+  @include text (16px, 25px, $dark-grey);
+  margin: 0;
+  letter-spacing: 0.05px;
+  margin-bottom: 12px;
+}
+
+.contacts__link {
+  color: $azure;
+  padding-bottom: 5px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px dashed $azure;
+  }
+
+  &:active {
+    border-bottom-style: solid;
+  }
+}

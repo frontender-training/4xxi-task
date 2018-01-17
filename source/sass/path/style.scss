@@ -1,6 +1,5 @@
 @import '../base/normalize.scss';
 @import '../base/fonts.scss';
-@import '../base/outline.scss';
 @import '../base/variables.scss';
 @import '../base/mixins.scss';
 @import '../base/scaffolding.scss';
@@ -15,8 +14,12 @@
 @import '../blocks/daily-records.scss';
 @import '../blocks/one-day-notes.scss';
 @import '../blocks/one-note.scss';
+@import '../blocks/calendar-notes.scss';
 @import '../blocks/checklist.scss';
+@import '../blocks/video.scss';
 @import '../blocks/photos.scss';
+@import '../blocks/contacts.scss';
+@import '../blocks/attachments.scss';
 
 @import '../blocks/footer.scss';
 @import '../blocks/main-nav.scss';
