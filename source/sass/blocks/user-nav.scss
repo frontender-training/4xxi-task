@@ -5,6 +5,8 @@
 
 .user-nav__list {
   @include list-reset;
+  align-items: flex-end;
+  height: 25px;
 }
 
 .user-nav__item {
@@ -22,6 +24,16 @@
 
   &--signup {
     color: $dark-blue;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+  }
+
+  &--login:hover,
+  &--login:focus {
+    color: $warm-grey;
   }
 }
 

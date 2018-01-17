@@ -1,0 +1,65 @@
+.share-popup {
+  @include elem(280px, 212px);
+  margin-left: -140px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  top: 150px;
+  left: 50%;
+  z-index: 9999;
+}
+
+.share-popup__title {
+  margin: 0;
+  padding: 22px 0;
+  font-weight: normal;
+  text-align: center;
+  color: #494a4c;
+  font-size: 23px;
+}
+
+.share-popup__content {
+  width: inherit;
+  height: 151px;
+  border-radius: 3px;
+  background-color: $pale-grey-two;
+  text-align: center;
+  padding: 21px 38px 30px;
+}
+
+.share-popup__close {
+  cursor: pointer;
+  @include elem(11px, 11px);
+  padding: 0;
+  border: 0;
+  top: 13px;
+  right: 13px;
+}
+
+.share-popup__close-icon {
+  display: block;
+  width: 11px;
+  height: 11px;
+}
+
+.share-popup__link {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.share-popup__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item--share-popup {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: $azure;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

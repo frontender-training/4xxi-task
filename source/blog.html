@@ -19,9 +19,8 @@
           <span class="app-promo__app-store">Download it for free on the App Store</span>
         </div>
         <a class="app-promo__download" href="https://app.centrallo.com" aria-label="Download application">Download</a>
-        <button class="app-promo__close" type="button">
-          <span class="visually-hidden">Close</span>
-          <!-- svg icon -->
+        <button class="app-promo__close" type="button" aria-label="Close promo block">
+          <img class="app-promo__close-icon" src="img/content/close.svg" alt="Close promo block">
         </button>
       </div>
     </header>
@@ -52,10 +51,12 @@
       <section class="user-info">
         <div class="user-info__wrap">
           <div class="user-info__profile">
-            <picture class="user-info__avatar">
-              <img src="img/content/ava@2x.png" alt="Konstantin Vladimirskiy" width="38" height="38">
-            </picture>
-            <p class="user-info__name">Konstantin Vladimirskiy</p>
+            <a href="#" class="user-info__profile-link">
+              <picture>
+                <img class="user-info__avatar" src="img/content/ava@2x.png" alt="Konstantin Vladimirskiy">
+              </picture>
+              <p class="user-info__name">Konstantin Vladimirskiy</p>
+            </a>
           </div>
           <div class="user-info__social">
             <ul class="social">
@@ -75,7 +76,11 @@
           </div>
           <div class="sharing-buttons">
             <a href="#" class="sharing-buttons__link sharing-buttons__link--follow">Add to my Centrallo</a>
-            <a href="http://cll.io/a6lnu" class="sharing-buttons__link">Share<span>http://cll.io/a6lnu</span></a>
+            <a href="http://cll.io/a6lnu" class="sharing-buttons__link">
+              <img class="sharing-buttons__icon" src="img/content/share.svg" alt="Sharing link" width="14" height="14">
+              Share
+              <span>http://cll.io/a6lnu</span>
+            </a>
           </div>
         </div>
       </section>
@@ -85,48 +90,48 @@
         <h1 class="notes__title visually-hidden">Записи блога</h1>
           <ul class="notes__list">
 
-            <li class="notes__item">
-              <article class="daily-records">
-                <h2 class="daily-records__title">Post-release checklist 2015.02.26</h2>
-                <div class="daily-records__wrap">
-                  <div class="one-note">
-                    <div class="checklist">
-                      <label class="checklist__item">
-                        <input type="checkbox" class="checklist__checkbox">
-                        <span class="checklist__option">Referral Accepted and Invited invitations not sorted by A-Z</span>
-                      </label>
-                      <label class="checklist__item">
-                        <input type="checkbox" class="checklist__checkbox" checked>
-                        <span class="checklist__option">Inbox shows me 242 items - that includes Done items; Only show me active</span>
-                      </label>
-                      <label class="checklist__item">
-                        <input type="checkbox" class="checklist__checkbox" checked>
-                        <span class="checklist__option">Inbox defaults to show done items - it should not</span>
-                      </label>
-                      <label class="checklist__item">
-                        <input type="checkbox" class="checklist__checkbox">
-                        <span class="checklist__option">Lists default to Show Done - they should not</span>
-                      </label>
-                      <label class="checklist__item">
-                        <input type="checkbox" class="checklist__checkbox">
-                        <span class="checklist__option">Recent view should sort by Created and show no Done items</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="daily-records__info">
-                    <span class="daily-records__update">2h ago</span>
-                    <div class="sharing">
-                      <a class="sharing__link"  href="http://cll.io/a6lnu">
-                        <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
-                      </a>
-                      <a class="sharing__link"  href="http://cll.io/a6lnu">
-                        <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
-                      </a>
-                    </div>
+          <li class="notes__item">
+            <article class="daily-records">
+              <h2 class="daily-records__title">Post-release checklist 2015.02.26</h2>
+              <div class="daily-records__wrap">
+                <div class="one-note">
+                  <div class="checklist">
+                    <label class="checklist__item">
+                      <input type="checkbox" class="checklist__checkbox">
+                      <span class="checklist__option">Referral Accepted and Invited invitations not sorted by A-Z</span>
+                    </label>
+                    <label class="checklist__item">
+                      <input type="checkbox" class="checklist__checkbox" checked>
+                      <span class="checklist__option">Inbox shows me 242 items - that includes Done items; Only show me active</span>
+                    </label>
+                    <label class="checklist__item">
+                      <input type="checkbox" class="checklist__checkbox" checked>
+                      <span class="checklist__option">Inbox defaults to show done items - it should not</span>
+                    </label>
+                    <label class="checklist__item">
+                      <input type="checkbox" class="checklist__checkbox">
+                      <span class="checklist__option">Lists default to Show Done - they should not</span>
+                    </label>
+                    <label class="checklist__item">
+                      <input type="checkbox" class="checklist__checkbox">
+                      <span class="checklist__option">Recent view should sort by Created and show no Done items</span>
+                    </label>
                   </div>
                 </div>
-              </article>
-            </li>
+                <div class="daily-records__info">
+                  <span class="daily-records__update">2h ago</span>
+                  <div class="sharing">
+                    <a class="sharing__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
+                    </a>
+                    <a class="sharing__link"  href="http://cll.io/a6lnu">
+                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
 
           <li class="notes__item">
             <article class="daily-records">
@@ -319,6 +324,16 @@
             </article>
           </li>
         </ul>
+        <ul class="other-notes">
+          <li class="other-notes__protected">
+            <span class="other-notes__date">Nov 20</span>
+            <span class="other-notes__name">Protected</span>
+          </li>
+          <li class="other-notes__archived">
+            <span class="other-notes__date">Nov 21</span>
+            <span class="other-notes__name">Archived</span>
+          </li>
+        </ul>
         </div>
       </section>
     </main>
@@ -345,6 +360,31 @@
         </ul>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+    <section class="share-popup">
+      <h2 class="share-popup__title">Share</h2>
+      <button class="share-popup__close" type="button" aria-label="Close">
+        <img class="share-popup__close-icon" src="img/content/close-grey.svg" alt="Close">
+      </button>
+      <div class="share-popup__content">
+        <a class="share-popup__link">http://cll.io/a6lnu<a>
+        <ul class="share-popup__social social">
+          <li class="social__item social__item--share-popup">
+            <a class="social__link" href="https://facebook.com" aria-label="Facebook"><!-- svg icon --></a>
+          </li>
+          <li class="social__item social__item--share-popup">
+            <a class="social__link" href="https://twitter.com" aria-label="Twitter"><!-- svg icon --></a>
+          </li>
+          <li class="social__item social__item--share-popup">
+            <a class="social__link" href="https://vk.com" aria-label="VK"><!-- svg icon --></a>
+          </li>
+          <li class="social__item social__item--share-popup">
+            <a class="social__link" href="https://linkedin.com" aria-label="Linkedin"><!-- svg icon --></a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
   </body>
 </html>

@@ -1,5 +1,5 @@
 .user-info {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .user-info__wrap {
@@ -8,19 +8,26 @@
 }
 
 .user-info__profile {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.user-info__profile-link {
   display: inline-flex;
   align-items: center;
 }
 
 .user-info__avatar {
   margin-right: 13px;
+  width: 38px;
+  height: 38px;
 }
 
 .user-info__name {
   margin: 0;
   color: $dark-grey;
-  font-size: 18px;
   line-height: 18px;
 }
 

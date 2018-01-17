@@ -5,10 +5,14 @@
 
 .sharing-buttons__link {
   @include btn;
+  display: inline-flex;
+
   font-size: 13px;
   line-height: 13px;
   padding: 9px 11px;
   margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 
   &--follow {
     background-color: $dark-blue;
@@ -28,4 +32,8 @@
   &:nth-last-of-type(2) {
     margin-bottom: 0;
   }
+}
+
+.sharing-buttons__icon {
+  margin-right: 5px;
 }
