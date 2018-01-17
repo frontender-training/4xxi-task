@@ -43,8 +43,14 @@
 
 .share-popup__link {
   display: block;
+  text-align: center;
   font-size: 20px;
-  margin-bottom: 40px;
+  color: #ffffff;
+  background-color: $dark-blue;
+  width: 151px;
+  height: 24px;
+  margin: 0 auto 36px;
+  line-height: 23px;
 }
 
 .share-popup__social {
