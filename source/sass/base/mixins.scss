@@ -5,6 +5,26 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: 720px;
+  }
+}
+
+@mixin container {
+  @media screen and (min-width: $tablet-widths) {
+    width: 768px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@mixin elem ($width, $height) {
+  content: ' ';
+  width: $width;
+  height: $height;
+  position: absolute;
+  z-index: 2;
 }
 
 @mixin list-reset {
@@ -48,12 +68,4 @@
     background-color: $dark-blue;
     color: #ffffff;
   }
-}
-
-@mixin elem ($width, $height) {
-  content: ' ';
-  width: $width;
-  height: $height;
-  position: absolute;
-  z-index: 2;
 }

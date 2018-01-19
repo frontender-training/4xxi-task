@@ -10,18 +10,22 @@
 
     <header class="app-promo">
       <div class="app-promo__wrap">
-        <div class="app-promo__logo">
-          <img class="app-promo__img" src="img/content/logo-promo.svg" width="32" height="32" alt="Centrallo">
+        <div class="app-promo__col">
+          <div class="app-promo__logo">
+            <img class="app-promo__img" src="img/content/logo-promo.svg" width="32" height="32" alt="Centrallo">
+          </div>
+          <div class="app-promo__description">
+            <span class="app-promo__name">Centrallo</span>
+            <span class="app-promo__google-play">Free on the Google Play</span>
+            <span class="app-promo__app-store">Download it for free on the App Store</span>
+          </div>
         </div>
-        <div class="app-promo__description">
-          <span class="app-promo__name">Centrallo</span>
-          <span class="app-promo__google-play">Free on the Google Play</span>
-          <span class="app-promo__app-store">Download it for free on the App Store</span>
+        <div class="app-promo__col">
+          <a class="app-promo__download" href="https://app.centrallo.com" aria-label="Download application">Download</a>
+          <button class="app-promo__close" type="button" aria-label="Close promo block">
+            <img class="app-promo__close-icon" src="img/content/close.svg" alt="Close promo block">
+          </button>
         </div>
-        <a class="app-promo__download" href="https://app.centrallo.com" aria-label="Download application">Download</a>
-        <button class="app-promo__close" type="button" aria-label="Close promo block">
-          <img class="app-promo__close-icon" src="img/content/close.svg" alt="Close promo block">
-        </button>
       </div>
     </header>
 
@@ -33,9 +37,7 @@
         <nav class="user-nav">
           <ul class="user-nav__list">
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--signup" href="signup.html" aria-label="Sign up">
-                Sign up <span class="user-nav__signup">for free</span>
-              </a>
+              <a class="user-nav__link user-nav__link--signup" href="signup.html" aria-label="Sign up">Sign up <span class="user-nav__signup">for free</span></a>
               <span class="user-nav__note"> — Start publishing in minutes</span>
             </li>
             <li class="user-nav__item">
@@ -268,7 +270,7 @@
                   </li>
 
                   <li class="one-day-notes__item one-note">
-                    <div class="one-note__contacts contacts">
+                    <div class="one-note__contacts contacts" id="map">
                       <picture>
                         <img class="contacts__map" src="img/content/map.svg" alt="Google map" width="264" height="176">
                       </picture>

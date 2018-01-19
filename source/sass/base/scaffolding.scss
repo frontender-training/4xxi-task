@@ -20,6 +20,10 @@ body {
   line-height: 16px;
   color: #727272;
   position: relative;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: 768px;
+  }
 }
 
 a {

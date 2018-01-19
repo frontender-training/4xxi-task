@@ -7,9 +7,17 @@
   @include wrap;
   justify-content: space-between;
   padding-bottom: 8px;
+
+  @media screen and (min-width: $tablet-widths) {
+    justify-content: flex-start;
+  }
 }
 
 .header__logo {
   width: 108px;
   height: 29;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 79px;
+  }
 }
