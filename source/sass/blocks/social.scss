@@ -1,3 +1,29 @@
 .social {
   @include list-reset;
+  width: inherit;
+  justify-content: flex-end;
 }
+
+.social__item {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item--user-info {
+  margin-right: 16px;
+
+  &:hover .social__link-icon,
+  &:focus .social__link-icon {
+    fill: $azure;
+  }
+
+  &:active {
+    fill: $mid-blue;
+  }
+}
+
+.social__link-icon {
+  fill: #ffffff;
+}
+

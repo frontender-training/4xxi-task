@@ -8,14 +8,13 @@
 
   @media screen and (min-width: $tablet-widths) {
     width: 720px;
+    margin: 0 auto;
   }
 }
 
 @mixin container {
   @media screen and (min-width: $tablet-widths) {
     width: 768px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 

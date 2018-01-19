@@ -1,17 +1,34 @@
 .user-info {
+  @include container;
   margin-bottom: 19px;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-bottom: 30px;
+  }
 }
 
 .user-info__wrap {
   @include wrap;
   padding-top: 20px;
+
+  @media screen and (min-width: $tablet-widths) {
+    padding-top: 29px;
+    justify-content: space-between;
+  }
 }
 
 .user-info__profile {
+  width: 296px;
   margin-bottom: 18px;
-
   padding-left: 3px;
   padding-right: 3px;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: 360px;
+    display: block;
+    margin-right: 18px;
+    margin-bottom: 0;
+  }
 }
 
 .user-info__profile-link {
@@ -20,17 +37,34 @@
 }
 
 .user-info__avatar {
+  border-radius: 50%;
   margin-right: 13px;
   width: 38px;
   height: 38px;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: 48px;
+    height: 48px;
+    margin-right: 11px;
+  }
 }
 
 .user-info__name {
   margin: 0;
   color: $dark-grey;
   line-height: 18px;
+
+  @media screen and (min-width: $tablet-widths) {
+    font-size: 18px;
+  }
 }
 
 .user-info__social {
   display: none;
+
+  @media screen and (min-width: $tablet-widths) {
+    display: flex;
+    width: 180px;
+    margin-right: 13px;
+  }
 }

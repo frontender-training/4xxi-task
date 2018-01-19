@@ -8,6 +8,10 @@
   </head>
   <body>
 
+    <div style="display:none">
+      <include src="public/img/sprite.svg"></include>
+    </div>
+
     <header class="app-promo">
       <div class="app-promo__wrap">
         <div class="app-promo__col">
@@ -62,17 +66,37 @@
           </div>
           <div class="user-info__social">
             <ul class="social">
-              <li class="social__item">
-                <a class="social__link" href="https://facebook.com" aria-label="Facebook"><!-- svg icon --></a>
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://facebook.com" aria-label="Facebook">
+                  <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
+                    <title id="social__title">Facebook</title>
+                    <use xlink:href="#soc-fb"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="https://twitter.com" aria-label="Twitter"><!-- svg icon --></a>
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+                  <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
+                    <title id="social__title">Twitter</title>
+                    <use xlink:href="#soc-tw"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="https://vk.com" aria-label="VK"><!-- svg icon --></a>
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://vk.com" aria-label="VK">
+                  <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title">
+                    <title id="social__title">VK</title>
+                    <use xlink:href="#soc-vk"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="https://www.linkedin.com/" aria-label="Linkedin"><!-- svg icon --></a>
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://www.linkedin.com/" aria-label="Linkedin">
+                  <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title">
+                    <title id="social__title">Linkedin</title>
+                    <use xlink:href="#soc-in"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -80,8 +104,8 @@
             <a href="#" class="sharing-buttons__link sharing-buttons__link--follow">Add to my Centrallo</a>
             <a href="#" class="sharing-buttons__link sharing-buttons__link--share">
               <img class="sharing-buttons__icon" src="img/content/share.svg" alt="Sharing link" width="14" height="14">
-              Share
-              <span>http://cll.io/a6lnu</span>
+              <span class="sharing-buttons__name-btn">Share</span>
+              <span class="sharing-buttons__text-link">http://cll.io/a6lnu</span>
             </a>
           </div>
         </div>

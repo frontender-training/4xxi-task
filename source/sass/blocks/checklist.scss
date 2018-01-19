@@ -10,6 +10,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-bottom: 8px;
+  }
 }
 
 .checklist__checkbox {

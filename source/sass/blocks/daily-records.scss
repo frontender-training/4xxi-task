@@ -1,8 +1,12 @@
 .daily-records__wrap {
+  @include wrap;
   border-radius: 5px;
   background-color: #f7f8f8;
-  width: 296px;
   padding: 16px 16px 25px 16px;
+
+  @media screen and (min-width: $tablet-widths) {
+    padding: 28px 30px 30px 30px;
+  }
 }
 
 .daily-records__title {
@@ -11,9 +15,15 @@
   margin-top: 0;
   margin-bottom: 12px;
   padding: 0 3px;
+
+  @media screen and (min-width: $tablet-widths) {
+    letter-spacing: 0.6px;
+    margin-bottom: 16px;
+  }
 }
 
 .daily-records__info {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -22,3 +32,5 @@
 .daily-records__update {
   color: $pinkish-grey;
 }
+
+

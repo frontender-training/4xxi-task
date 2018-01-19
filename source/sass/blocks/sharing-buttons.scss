@@ -1,6 +1,17 @@
 .sharing-buttons {
-  @include wrap;
+  height: inherit;
+  width: 296px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: auto;
+    margin: 0;
+    position: relative;
+  }
 }
 
 .sharing-buttons__link {
@@ -22,10 +33,30 @@
       background-color: #ffffff;
       color: $dark-blue;
     }
-  }
 
-  span {
-    display: none;
+    @media screen and (min-width: $tablet-widths) {
+      position: absolute;
+      top: 57px;
+      right: 0;
+      width: 148px
+      }
+    }
+
+  &--share {
+    @media screen and (min-width: $tablet-widths) {
+      width: 112px;
+      height: 24px;
+      color: #ffffff;
+      border-radius: 4px;
+      background-color: $light-grey-blue;
+
+      &:hover,
+      &:focus {
+        transform: scale(1);
+
+        background-color: $azure;
+      }
+    }
   }
 
   &:last-of-type,
@@ -34,6 +65,24 @@
   }
 }
 
+.sharing-buttons__name-btn {
+  @media screen and (min-width: $tablet-widths) {
+    display: none;
+  }
+}
+
+.sharing-buttons__text-link {
+  display: none;
+
+  @media screen and (min-width: $tablet-widths) {
+    display: block;
+  }
+}
+
 .sharing-buttons__icon {
   margin-right: 5px;
+
+  @media screen and (min-width: $tablet-widths) {
+    display: none;
+  }
 }
