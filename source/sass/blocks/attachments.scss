@@ -5,6 +5,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: 412px;
+    justify-content: space-between;
+  }
 }
 
 .attachments__item {
@@ -21,13 +26,25 @@
   &:nth-last-child(2) {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 0;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+.attachments__link {
+  text-align: center;
+  margin-bottom: 13px;
+  display: block;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-bottom: 11px;
+  }
 }
 
 .attachments__filename {
   display: block;
   font-size: 14px;
-}
-
-.attachments__icon {
-  margin-bottom: 13px;
 }

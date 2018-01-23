@@ -3,20 +3,48 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 24px;
+
+  &--lists {
+    @media screen and (min-width: $tablet-widths) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &--media {
+    @media screen and (min-width: $tablet-widths) {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .one-day-notes__item {
   padding-bottom: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   border-bottom: solid 0.5px $pinkish-grey;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-bottom: 24px;
+  }
 
   &:last-of-type {
     border: none;
+    padding-bottom: 0;
     margin-bottom: 0;
   }
 
   &--checklists {
     border: none;
     padding-bottom: 0;
+
+    @media screen and (min-width: $tablet-widths) {
+      padding-top: 4px;
+      padding-bottom: 15px;
+      margin-bottom: 10px;
+      border-bottom: solid 0.5px $pinkish-grey;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }

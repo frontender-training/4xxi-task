@@ -1,6 +1,5 @@
 .one-note {
   width: 100%;
-  margin-bottom: 22px;
 }
 
 .one-note__show {
@@ -11,30 +10,67 @@
   background-color: transparent;
   border: 0;
   font-family: $font;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-bottom: 0;
+    letter-spacing: -0.2px;
+  }
 }
 
 .one-note__icon {
   margin-right: 7px;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 14px;
+  }
 }
 
 .one-note__desc {
-  padding-left: 24px;
+  width: 100%;
+  padding-left: 29px;
   color: $cool-grey-two;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media screen and (min-width: $tablet-widths) {
+    padding-left: 0;
+    width: 160px;
+  }
 }
 
 .one-note__text {
+  margin-top: -5px;
   margin-bottom: 5px;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-top: -3px;
+    margin-bottom: 22px;
+  }
 }
 
 .one-note__text p {
     line-height: 25px;
     margin: 0;
+    padding-right: 1px;
+
+  @media screen and (min-width: $tablet-widths) {
+    line-height: 26px;
+  }
 }
 
 .one-note__date {
   order: -1;
+
+  @media screen and (min-width: $tablet-widths) {
+    order: 0;
+  }
+}
+
+.one-note__media {
+  @media screen and (min-width: $tablet-widths) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

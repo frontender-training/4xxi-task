@@ -5,14 +5,14 @@
 .checklist__item {
   display: block;
   position: relative;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   @media screen and (min-width: $tablet-widths) {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 }
 
@@ -56,7 +56,7 @@
 .checklist__option {
   display: inline-block;
   vertical-align: top;
-  line-height: 21px;
+  line-height: 22px;
   padding-left: 24px;
 
   &::before {

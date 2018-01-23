@@ -3,6 +3,24 @@
   padding: 0;
   list-style: none;
   margin-bottom: 7px;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 14px;
+  }
+}
+
+
+.video__item {
+  @media screen and (min-width: $tablet-widths) {
+    margin-bottom: 0;
+    margin-right: 14px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .video__player {
@@ -16,6 +34,11 @@
 
 .video__img {
   display: block;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: auto;
+    height: 120px;
+  }
 }
 
 .video__start-btn {
@@ -40,4 +63,16 @@
   &:active {
     opacity: 0.7;
   }
+
+  @media screen and (min-width: $tablet-widths) {
+    width: 50.4px;
+    height: 50.4px;
+    margin-left: -25.2px;
+    margin-top: -25.2px;
+  }
+}
+
+.video__start-btn-img {
+  width: inherit;
+  height: inherit;
 }

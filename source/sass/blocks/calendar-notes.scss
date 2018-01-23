@@ -1,8 +1,12 @@
 .calendar-notes {
-  width: 264px;
-  padding-top: 19px;
+  width: 100%;
+  padding-top: 16px;
   border-top: solid 0.5px $pinkish-grey;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet-widths) {
+    padding-top: 19px;
+  }
 }
 
 .calendar-notes__show {
@@ -19,4 +23,8 @@
 
 .calendar__icon {
   margin-right: 10px;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 16px;
+  }
 }

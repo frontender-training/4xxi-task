@@ -5,6 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 264px;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: auto;
+  }
 }
 
 .photos__item {
@@ -16,6 +20,15 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 14px;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .photos__image {
@@ -23,4 +36,9 @@
   width: auto;
   height: auto;
   flex-shrink: 0;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: auto;
+    height: 120px;
+  }
 }

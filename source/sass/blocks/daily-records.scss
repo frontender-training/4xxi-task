@@ -5,20 +5,22 @@
   padding: 16px 16px 25px 16px;
 
   @media screen and (min-width: $tablet-widths) {
-    padding: 28px 30px 30px 30px;
+    padding: 29px 30px 25px 30px;
   }
 }
 
 .daily-records__title {
-  @include text(19px, 23px, $dark-grey);
+  @include text(18px, 23px, $dark-grey);
   font-weight: normal;
   margin-top: 0;
-  margin-bottom: 12px;
-  padding: 0 3px;
+  margin-bottom: 11px;
+  padding: 0 4px;
+  letter-spacing: 0.25px;
 
   @media screen and (min-width: $tablet-widths) {
-    letter-spacing: 0.6px;
+    letter-spacing: 1.1px;
     margin-bottom: 16px;
+    padding: 0 3px;
   }
 }
 
@@ -27,10 +29,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 2px;
 }
 
 .daily-records__update {
   color: $pinkish-grey;
 }
-
-
