@@ -5,8 +5,14 @@
 }
 
 .social__item {
+  margin-right: 19px;
+
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 12px;
   }
 }
 

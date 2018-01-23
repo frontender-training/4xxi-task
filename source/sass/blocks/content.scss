@@ -1,0 +1,7 @@
+.content {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-bottom: 56px;
+  }
+}

@@ -5,11 +5,35 @@
 
 .footer__wrap {
   @include wrap;
+  height: inherit;
   justify-content: space-between;
 }
 
 .footer__copyright {
+  @include text(11px, 11px, $cool-grey-three);
+  letter-spacing: 0.4px;
   display: none;
   text-transform: uppercase;
-  color: $cool-grey-three;
+
+  @media screen and (min-width: $tablet-widths) {
+    display: block;
+  }
+}
+
+.footer__social {
+  width: 50px;
+  margin-right: 5px;
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 3px;
+  }
+
+  .social__link-icon {
+    fill: $cool-grey-three;
+
+    &:hover,
+    &:focus {
+      fill: #ffffff;
+    }
+  }
 }

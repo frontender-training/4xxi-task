@@ -1,5 +1,19 @@
+.main-nav {
+  width: 180px;
+  height: inherit;
+  padding-left: 1px;
+
+  @media screen and (min-width: $tablet-widths) {
+    width: 234px;
+    max-width: 300px;
+    padding-left: 0;
+  }
+}
+
 .main-nav__list {
   @include list-reset;
+  height: inherit;
+  align-items: center;
 }
 
 .main-nav__item {
@@ -8,14 +22,14 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.main-nav__link {
+  @include text(11px, 11px, $cool-grey-three);
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
     color: #ffffff;
   }
-}
-
-.main-nav__link {
-  @include text-small($color: $cool-grey-three);
-  text-transform: uppercase;
 }

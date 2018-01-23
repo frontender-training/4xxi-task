@@ -52,7 +52,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="content">
 
       <section class="user-info">
         <div class="user-info__wrap">
@@ -120,30 +120,32 @@
             <article class="daily-records">
               <h2 class="daily-records__title">Post-release checklist 2015.02.26</h2>
               <div class="daily-records__wrap">
-                <div class="one-note">
-                  <div class="checklist">
-                    <label class="checklist__item">
-                      <input type="checkbox" class="checklist__checkbox">
-                      <span class="checklist__option">Referral Accepted and Invited invitations not sorted by A-Z</span>
-                    </label>
-                    <label class="checklist__item">
-                      <input type="checkbox" class="checklist__checkbox" checked>
-                      <span class="checklist__option">Inbox shows me 242 items - that includes Done items; Only show me active</span>
-                    </label>
-                    <label class="checklist__item">
-                      <input type="checkbox" class="checklist__checkbox" checked>
-                      <span class="checklist__option">Inbox defaults to show done items - it should not</span>
-                    </label>
-                    <label class="checklist__item">
-                      <input type="checkbox" class="checklist__checkbox">
-                      <span class="checklist__option">Lists default to Show Done - they should not</span>
-                    </label>
-                    <label class="checklist__item">
-                      <input type="checkbox" class="checklist__checkbox">
-                      <span class="checklist__option">Recent view should sort by Created and show no Done items</span>
-                    </label>
-                  </div>
-                </div>
+                <ul class="one-day-notes">
+                  <li class="one-day-notes__item one-note">
+                    <div class="checklist">
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox">
+                        <span class="checklist__option">Referral Accepted and Invited invitations not sorted by A-Z</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox" checked>
+                        <span class="checklist__option">Inbox shows me 242 items - that includes Done items; Only show me active</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox" checked>
+                        <span class="checklist__option">Inbox defaults to show done items - it should not</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox">
+                        <span class="checklist__option">Lists default to Show Done - they should not</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox">
+                        <span class="checklist__option">Recent view should sort by Created and show no Done items</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
                 <div class="daily-records__info">
                   <span class="daily-records__update">2h ago</span>
                   <div class="sharing">
@@ -163,7 +165,7 @@
             <article class="daily-records">
               <h2 class="daily-records__title visually-hidden">Notes 2015.03.12</h2>
                 <div class="daily-records__wrap">
-                  <ul class="one-day-notes">
+                  <ul class="one-day-notes one-day-notes--lists">
                     <li class="one-day-notes__item one-day-notes__item--checklists one-note">
                       <button class="one-note__show" type="button" aria-label="Click me and show note">
                         <img class="one-note__icon" src="img/decoration/list.svg"><!-- svg icon -->
@@ -175,7 +177,7 @@
                       </div>
                     </li>
 
-                    <li class="one-day-notes__item one-note">
+                    <li class="one-day-notes__item one-day-notes__item--checklists one-note">
                       <button class="one-note__show" type="button" aria-label="Click me and show note">
                         <img class="one-note__icon" src="img/decoration/list.svg"><!-- svg icon -->
                         The longest title in the world
@@ -207,7 +209,7 @@
             <article class="daily-records">
               <h2 class="daily-records__title visually-hidden">Notes 2015.02.13</h2>
               <div class="daily-records__wrap">
-                <ul class="one-day-notes">
+                <ul class="one-day-notes one-day-notes--media">
                   <li class="one-day-notes__item one-note">
                     <div class="one-note__media">
                       <ul class="video">
@@ -217,7 +219,7 @@
                               <img class="video__img" src="img/content/video-mobile@1x.jpg" alt="video">
                             </picture>
                             <button class="video__start-btn" type="button" aria-label="Play video">
-                              <img src="img/content/play.svg" width="63" height="63" alt="Play video">
+                              <img class="video__start-btn-img" src="img/content/play.svg" alt="Play video">
                             </button>
                           </div>
                         </li>
@@ -236,24 +238,25 @@
                       </ul>
                     </div>
                   </li>
-                  <div class="calendar-notes">
-                      <button class="calendar-notes__show" type="button" aria-label="Click me and show calendar">
-                      <img class="calendar__icon" src="img/decoration/calendar.svg"><!-- svg icon -->
-                      Due on Feb 13, 12:42 PM
-                    </button>
-                  </div>
+                </ul>
+                <div class="calendar-notes">
+                  <button class="calendar-notes__show" type="button" aria-label="Click me and show calendar">
+                    <img class="calendar__icon" src="img/decoration/calendar.svg"><!-- svg icon -->
+                    Due on Feb 13, 12:42 PM
+                  </button>
+                </div>
 
-                  <div class="daily-records__info">
-                    <span class="daily-records__update">Mar 13</span>
-                    <div class="sharing">
-                      <a class="sharing__link sharing__link--share"  href="http://cll.io/a6lnu">
-                        <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
-                      </a>
-                      <a class="sharing__link"  href="#">
-                        <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
-                      </a>
-                    </div>
+                <div class="daily-records__info">
+                  <span class="daily-records__update">Feb 14</span>
+                  <div class="sharing">
+                    <a class="sharing__link sharing__link--share"  href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
+                    </a>
+                    <a class="sharing__link"  href="#">
+                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                    </a>
                   </div>
+                </div>
               </div>
             </article>
           </li>
@@ -296,7 +299,7 @@
                   <li class="one-day-notes__item one-note">
                     <div class="one-note__contacts contacts" id="map">
                       <picture>
-                        <img class="contacts__map" src="img/content/map.svg" alt="Google map" width="264" height="176">
+                        <img class="contacts__map" src="img/content/map.svg" alt="Google map">
                       </picture>
                       <div class="contacts__info">
                         <p class="contacts__title">Merry Bergtraum High School for Business Cariers</p>
@@ -318,7 +321,7 @@
                         <span class="attachments__filename">logo_final.eps</span>
                       </li>
                       <li class="attachments__item">
-                        <a class="attachments__link" href="https://skydrive.com" aria-label="Download file from skydrive.">
+                        <a class="attachments__link" href="https://skydrive.com" aria-label="Download file from skydrive">
                           <img class="attachments__icon" src="img/content/skydrive.svg" alt="Download file from skydrive" class="attachments__img">
                         </a>
                         <span class="attachments__filename">photos_summer.zip</span>
@@ -376,12 +379,22 @@
             <li class="main-nav__item"><a class="main-nav__link" href="#">Contacts</a></li>
           </ul>
         </nav>
-        <ul class="social">
+        <ul class="social footer__social">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com" aria-label="Twitter"><!-- svg icon --></a>
+            <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+              <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
+                <title id="social__title">Twitter</title>
+                <use xlink:href="#soc-tw"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://facebook.com" aria-label="Facebook"><!-- svg icon --></a>
+            <a class="social__link" href="https://facebook.com" aria-label="Facebook">
+              <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
+                <title id="social__title">Facebook</title>
+                <use xlink:href="#soc-fb"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -397,16 +410,36 @@
         <a class="share-popup__link" tabidex="0">http://cll.io/a6lnu<a>
         <ul class="share-popup__social social">
           <li class="social__item social__item--share-popup">
-            <a class="social__link" href="https://facebook.com" aria-label="Facebook"><!-- svg icon --></a>
+            <a class="social__link" href="https://facebook.com" aria-label="Facebook">
+              <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
+                <title id="social__title">Facebook</title>
+                <use xlink:href="#soc-fb"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item social__item--share-popup">
-            <a class="social__link" href="https://twitter.com" aria-label="Twitter"><!-- svg icon --></a>
+            <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+              <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
+                <title id="social__title">Twitter</title>
+                <use xlink:href="#soc-tw"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item social__item--share-popup">
-            <a class="social__link" href="https://vk.com" aria-label="VK"><!-- svg icon --></a>
+            <a class="social__link" href="https://vk.com" aria-label="VK">
+              <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title">
+                <title id="social__title">VK</title>
+                <use xlink:href="#soc-vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item social__item--share-popup">
-            <a class="social__link" href="https://linkedin.com" aria-label="Linkedin"><!-- svg icon --></a>
+            <a class="social__link" href="https://linkedin.com" aria-label="Linkedin">
+              <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title">
+                <title id="social__title">Linkedin</title>
+                <use xlink:href="#soc-in"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
