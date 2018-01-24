@@ -1,9 +1,11 @@
 .share-popup {
   @include elem(280px, 212px);
+  position: fixed;
   margin-left: -140px;
+  margin-top: -106px;
   border-radius: 3px;
   background-color: #ffffff;
-  top: 150px;
+  top: 50%;
   left: 50%;
   z-index: 9999;
 }
