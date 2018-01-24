@@ -10,6 +10,10 @@
     width: 412px;
     justify-content: space-between;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    width: 442px;
+  }
 }
 
 .attachments__item {
@@ -31,6 +35,10 @@
     margin-right: 0;
     margin-bottom: 0;
     flex-shrink: 0;
+  }
+
+  @media screen and (min-width: $desktop-widths) {
+    width: 136px;
   }
 }
 

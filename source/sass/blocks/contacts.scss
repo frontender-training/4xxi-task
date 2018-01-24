@@ -23,6 +23,10 @@
   @media screen and (min-width: $tablet-widths) {
     width: 300px;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    width: 584px;
+  }
 }
 
 .contacts__title {
@@ -30,6 +34,10 @@
   margin-top: 0;
   letter-spacing: 0.8px;
   margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop-widths) {
+    margin-bottom: 3px;
+  }
 }
 
 .contacts__desc {

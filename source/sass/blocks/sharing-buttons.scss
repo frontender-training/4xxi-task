@@ -38,8 +38,12 @@
       top: 57px;
       right: 0;
       width: 148px
-      }
     }
+
+    @media screen and (min-width: $desktop-widths) {
+      top: 53px;
+    }
+  }
 
   &--share {
     @media screen and (min-width: $tablet-widths) {

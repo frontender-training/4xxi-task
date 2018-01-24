@@ -8,6 +8,11 @@
     max-width: 300px;
     padding-left: 0;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    width: 257px;
+    max-width: 450px;
+  }
 }
 
 .main-nav__list {
@@ -31,5 +36,10 @@
   &:hover,
   &:focus {
     color: #ffffff;
+  }
+
+  @media screen and (min-width: $desktop-widths) {
+    @include text(12px, 12px, $cool-grey-three);
+    letter-spacing: 0.3px;
   }
 }

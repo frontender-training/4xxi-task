@@ -29,6 +29,15 @@
       margin-right: 0;
     }
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    margin-right: 12px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .photos__image {
@@ -40,5 +49,9 @@
   @media screen and (min-width: $tablet-widths) {
     width: auto;
     height: 120px;
+  }
+
+  @media screen and (min-width: $desktop-widths) {
+    height: 140px;
   }
 }

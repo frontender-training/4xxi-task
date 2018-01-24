@@ -4,6 +4,10 @@
   @media screen and (min-width: $tablet-widths) {
     width: 533px;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    width: 655px;
+  }
 }
 
 .user-nav__list {

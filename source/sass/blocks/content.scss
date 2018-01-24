@@ -4,4 +4,8 @@
   @media screen and (min-width: $tablet-widths) {
     margin-bottom: 56px;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    margin-bottom: 79px;
+  }
 }

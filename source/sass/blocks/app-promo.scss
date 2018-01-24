@@ -2,6 +2,10 @@
   @include container;
   height: 50px;
   background-color: $dark-blue;
+
+  @media screen and (min-width: $desktop-widths) {
+    display: none;
+  }
 }
 
 .app-promo__wrap {

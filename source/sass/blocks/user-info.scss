@@ -5,6 +5,10 @@
   @media screen and (min-width: $tablet-widths) {
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    margin-bottom: 25px;
+  }
 }
 
 .user-info__wrap {
@@ -24,9 +28,8 @@
   padding-right: 2px;
 
   @media screen and (min-width: $tablet-widths) {
-    width: 360px;
+    width: 50%;
     display: block;
-    margin-right: 18px;
     margin-bottom: 0;
   }
 }
@@ -65,6 +68,9 @@
   @media screen and (min-width: $tablet-widths) {
     display: flex;
     width: 180px;
-    margin-right: 12px;
+  }
+
+  @media screen and (min-width: $desktop-widths) {
+    width: 305px;
   }
 }

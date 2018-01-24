@@ -24,6 +24,10 @@ body {
   @media screen and (min-width: $tablet-widths) {
     width: 768px;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    width: 1200px;
+  }
 }
 
 a {

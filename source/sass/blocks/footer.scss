@@ -1,6 +1,10 @@
 .footer {
   height: 64px;
   background-color: $bgc-dark-grey;
+
+  @media screen and (min-width: $desktop-widths) {
+    height: 80px;
+  }
 }
 
 .footer__wrap {
@@ -18,6 +22,10 @@
   @media screen and (min-width: $tablet-widths) {
     display: block;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    @include text(12px, 12px, $cool-grey-three);
+  }
 }
 
 .footer__social {
@@ -34,6 +42,20 @@
     &:hover,
     &:focus {
       fill: #ffffff;
+    }
+  }
+
+  .social__link-icon--twitter {
+    @media screen and (min-width: $desktop-widths) {
+      width: 20px;
+      height: 16px;
+    }
+  }
+
+  .social__link-icon--facebook {
+    @media screen and (min-width: $desktop-widths) {
+      width: 10px;
+      height: 20px;
     }
   }
 }

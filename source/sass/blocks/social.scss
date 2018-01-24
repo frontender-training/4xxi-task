@@ -14,6 +14,10 @@
   @media screen and (min-width: $tablet-widths) {
     margin-right: 12px;
   }
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 19px;
+  }
 }
 
 .social__item--user-info {
@@ -26,6 +30,10 @@
 
   &:active {
     fill: $mid-blue;
+  }
+
+  @media screen and (min-width: $tablet-widths) {
+    margin-right: 16px;
   }
 }
 

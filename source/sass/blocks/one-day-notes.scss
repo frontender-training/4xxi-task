@@ -15,6 +15,10 @@
     @media screen and (min-width: $tablet-widths) {
       margin-bottom: 12px;
     }
+
+    @media screen and (min-width: $desktop-widths) {
+      margin-bottom: 31px;
+    }
   }
 }
 

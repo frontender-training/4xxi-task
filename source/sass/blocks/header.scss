@@ -1,6 +1,10 @@
 .header {
   height: 48px;
   background-color: $bgc-dark-grey;
+
+  @media screen and (min-width: $desktop-widths) {
+    height: 60px;
+  }
 }
 
 .header__wrap {
@@ -11,6 +15,11 @@
   @media screen and (min-width: $tablet-widths) {
     justify-content: flex-start;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
 }
 
 .header__logo {
@@ -19,5 +28,9 @@
 
   @media screen and (min-width: $tablet-widths) {
     margin-right: 79px;
+  }
+
+  @media screen and (min-width: $desktop-widths) {
+    margin-right: 0;
   }
 }

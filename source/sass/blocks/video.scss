@@ -39,6 +39,10 @@
     width: auto;
     height: 120px;
   }
+
+  @media screen and (min-width: $desktop-widths) {
+    height: 140px;
+  }
 }
 
 .video__start-btn {

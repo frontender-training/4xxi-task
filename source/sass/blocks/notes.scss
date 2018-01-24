@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media screen and (min-width: $desktop-widths) {
+    margin-bottom: 14px;
+  }
 }
 
 .notes__item {
