@@ -42,11 +42,23 @@
   position: absolute;
   z-index: 3;
   border-radius: 4px;
-  border: 24px solid transparent;
-  border-top: 24px solid $color;
-  border-right: 24px solid $color;
+  border: 20px solid transparent;
+  border-top: 20px solid $color;
+  border-right: 20px solid $color;
   top: 0;
   right: 0;
+
+  @media screen and (min-width: $tablet-widths) {
+    border: 22px solid transparent;
+    border-top: 22px solid $color;
+    border-right: 22px solid $color;
+  }
+
+  @media screen and (min-width: $desktop-widths) {
+    border: 24px solid transparent;
+    border-top: 24px solid $color;
+    border-right: 24px solid $color;
+  }
 }
 
 @mixin list-reset {

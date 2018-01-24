@@ -23,6 +23,19 @@
   &::before {
     @include triangle(#3c434a);
   }
+
+  &::after {
+    @include elem (12px, 15px);
+    z-index: 3;
+    background-image: url('../img/decoration/lock.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media screen and (min-width: $desktop-widths) {
+      top: 6px;
+      right: 6px;
+    }
+  }
 }
 
 
@@ -31,6 +44,19 @@
 
   &::before {
     @include triangle(#979da3);
+  }
+
+  &::after {
+    @include elem (16px, 14px);
+    z-index: 3;
+    background-image: url('../img/decoration/box.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media screen and (min-width: $desktop-widths) {
+      top: 9px;
+      right: 6px;
+    }
   }
 }
 

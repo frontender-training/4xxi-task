@@ -6,7 +6,7 @@
 .one-note--favorite {
 
   &::before {
-    @include triangle($tomato);
+    @include triangle ($tomato);
     top: -16px;
     right: -16px;
 
@@ -17,7 +17,22 @@
   }
 
   &::after {
-    @include elem(15px, 14px);
+    @include elem (15px, 14px);
+    z-index: 3;
+    top: -12px;
+    right: -13px;
+    background-image: url('../img/decoration/star.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media screen and (min-width: $tablet-widths) {
+      top: -24px;
+      right: -26px;
+    }
+
+    @media screen and (min-width: $desktop-widths) {
+      right: -24px;
+    }
   }
 }
 
