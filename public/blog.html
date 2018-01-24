@@ -68,8 +68,10 @@
     </header>
 
     <main class="content">
+      <h1 class="user-info__title visually-hidden">User notes</h1>
 
       <section class="user-info">
+        <h2 class="user-info__title visually-hidden">About user</h2>
         <div class="user-info__wrap">
           <div class="user-info__profile">
             <a href="#" class="user-info__profile-link">
@@ -86,32 +88,32 @@
             <ul class="social">
               <li class="social__item social__item--user-info">
                 <a class="social__link" href="https://facebook.com" aria-label="Facebook">
-                  <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
-                    <title id="social__title">Facebook</title>
+                  <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title-fb-user">
+                    <title id="social__title-fb-user">Facebook</title>
                     <use xlink:href="#soc-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item social__item--user-info">
                 <a class="social__link" href="https://twitter.com" aria-label="Twitter">
-                  <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
-                    <title id="social__title">Twitter</title>
+                  <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title-tw-user">
+                    <title id="social__title-tw-user">Twitter</title>
                     <use xlink:href="#soc-tw"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item social__item--user-info">
                 <a class="social__link" href="https://vk.com" aria-label="VK">
-                  <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title">
-                    <title id="social__title">VK</title>
+                  <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title-vk-user">
+                    <title id="social__title-vk-user">VK</title>
                     <use xlink:href="#soc-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item social__item--user-info">
                 <a class="social__link" href="https://www.linkedin.com/" aria-label="Linkedin">
-                  <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title">
-                    <title id="social__title">Linkedin</title>
+                  <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title-ld-user">
+                    <title id="social__title-ld-user">Linkedin</title>
                     <use xlink:href="#soc-in"></use>
                   </svg>
                 </a>
@@ -131,7 +133,7 @@
 
       <section class="notes">
         <div class="notes__wrap">
-        <h1 class="notes__title visually-hidden">Записи блога</h1>
+        <h2 class="notes__title visually-hidden">Blog entries</h2>
           <ul class="notes__list">
 
           <li class="notes__item">
@@ -171,7 +173,7 @@
                       <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
                     </a>
                     <a class="sharing__link" href="#">
-                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                      <img src="img/content/url.svg" alt="Copy link" class="sharing__img" width="20" height="20">
                     </a>
                   </div>
                 </div>
@@ -186,9 +188,9 @@
                   <ul class="one-day-notes one-day-notes--lists">
                     <li class="one-day-notes__item one-day-notes__item--checklists one-note">
                       <button class="one-note__show" type="button" aria-label="Click me and show note">
-                        <svg class="one-note__icon one-note__icon--important" width="16" height="14" aria-labelledby="one-note__list-title">
-                           <title id="one-note__list-title" "="">Important list</title>
-                        <use xlink:href="#list"></use>
+                        <svg class="one-note__icon one-note__icon--important" width="16" height="14" aria-labelledby="one-note__list-title-important">
+                          <title id="one-note__list-title-important">Important list</title>
+                          <use xlink:href="#list"></use>
                         </svg>
                         Children
                       </button>
@@ -201,7 +203,7 @@
                     <li class="one-day-notes__item one-day-notes__item--checklists one-note">
                       <button class="one-note__show" type="button" aria-label="Click me and show note">
                         <svg class="one-note__icon" width="16" height="14" aria-labelledby="one-note__list-title">
-                          <title id="one-note__list-title" "="">List</title>
+                          <title id="one-note__list-title">List</title>
                           <use xlink:href="#list"></use>
                         </svg>
                         The longest title in the world
@@ -220,7 +222,7 @@
                         <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
                       </a>
                       <a class="sharing__link" href="#">
-                        <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                        <img src="img/content/url.svg" alt="Copy link" class="sharing__img" width="20" height="20">
                       </a>
                     </div>
                   </div>
@@ -283,7 +285,7 @@
                 </ul>
                 <div class="calendar-notes">
                   <button class="calendar-notes__show" type="button" aria-label="Click me and show calendar">
-                    <img class="calendar__icon" src="img/decoration/calendar.svg">
+                    <img class="calendar__icon" alt="Calendar image" src="img/decoration/calendar.svg">
                     Due on Feb 13, 12:42 PM
                   </button>
                 </div>
@@ -295,7 +297,7 @@
                       <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
                     </a>
                     <a class="sharing__link" href="#">
-                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                      <img src="img/content/url.svg" alt="Copy link" class="sharing__img" width="20" height="20">
                     </a>
                   </div>
                 </div>
@@ -383,9 +385,9 @@
                       <li class="attachments__item">
                         <a class="attachments__link" href="https://dropbox.com" aria-label="Download file from dropbox">
                           <img class="attachments__icon" src="img/content/db.svg" alt="Download file from dropbox">
-                        <a>
+                        </a>
                         <span class="attachments__filename">logo_final.eps</span>
-                      </a></a></li>
+                      </li>
                       <li class="attachments__item">
                         <a class="attachments__link" href="https://skydrive.com" aria-label="Download file from skydrive">
                           <img class="attachments__icon" src="img/content/skydrive.svg" alt="Download file from skydrive">
@@ -409,7 +411,7 @@
                       <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
                     </a>
                     <a class="sharing__link" href="#">
-                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                      <img src="img/content/url.svg" alt="Copy link" class="sharing__img" width="20" height="20">
                     </a>
                   </div>
                 </div>
@@ -448,16 +450,16 @@
         <ul class="social footer__social">
           <li class="social__item">
             <a class="social__link" href="https://twitter.com" aria-label="Twitter">
-              <svg class="social__link-icon social__link-icon--twitter" width="16" height="13" aria-labelledby="social__title">
-                <title id="social__title">Twitter</title>
+              <svg class="social__link-icon social__link-icon--twitter" width="16" height="13" aria-labelledby="social__title-tw-footer">
+                <title id="social__title-tw-footer">Twitter</title>
                 <use xlink:href="#soc-tw"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://facebook.com" aria-label="Facebook">
-              <svg class="social__link-icon social__link-icon--facebook" width="8" height="16" aria-labelledby="social__title">
-                <title id="social__title">Facebook</title>
+              <svg class="social__link-icon social__link-icon--facebook" width="8" height="16" aria-labelledby="social__title-fb-footer">
+                <title id="social__title-fb-footer">Facebook</title>
                 <use xlink:href="#soc-fb"></use>
               </svg>
             </a>
@@ -473,43 +475,43 @@
         <img class="share-popup__close-icon" src="img/content/close-grey.svg" alt="Close">
       </button>
       <div class="share-popup__content">
-        <a class="share-popup__link" tabidex="0">http://cll.io/a6lnu<a>
+        <a class="share-popup__link">http://cll.io/a6lnu</a>
         <ul class="share-popup__social social">
           <li class="social__item share-popup__item share-popup__item--facebook">
             <a class="social__link" href="https://facebook.com" aria-label="Facebook">
-              <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
-                <title id="social__title">Facebook</title>
+              <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title-fb">
+                <title id="social__title-fb">Twitter</title>
                 <use xlink:href="#soc-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item share-popup__item share-popup__item--twitter">
             <a class="social__link" href="https://twitter.com" aria-label="Twitter">
-              <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
-                <title id="social__title">Twitter</title>
+              <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title-tw">
+                <title id="social__title-tw">Twitter</title>
                 <use xlink:href="#soc-tw"></use>
               </svg>
             </a>
           </li>
           <li class="social__item share-popup__item share-popup__item--vk">
             <a class="social__link" href="https://vk.com" aria-label="VK">
-              <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title">
-                <title id="social__title">VK</title>
+              <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title-vk">
+                <title id="social__title-vk">VK</title>
                 <use xlink:href="#soc-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item share-popup__item share-popup__item--linkedin">
             <a class="social__link" href="https://linkedin.com" aria-label="Linkedin">
-              <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title">
-                <title id="social__title">Linkedin</title>
+              <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title-ld">
+                <title id="social__title-ld">Linkedin</title>
                 <use xlink:href="#soc-in"></use>
               </svg>
             </a>
           </li>
         </ul>
-      </a></a></div>
+      </div>
     </section>
-    <script type="application/javascript" src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
