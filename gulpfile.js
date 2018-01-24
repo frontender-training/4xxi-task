@@ -95,7 +95,7 @@ gulp.task('sprite', function () {
 
 // ЗАДАЧА: Минимизируем JS
 gulp.task('js:process', function () {
-  return gulp.src('./source/js**/*.js')
+  return gulp.src('./source/js/**/*.js')
     .pipe(gp.plumber())
     .pipe(gp.uglify())
     .pipe(gp.rename({ suffix: '.min' }))
@@ -111,9 +111,9 @@ gulp.task('clean', function() {
 gulp.task('copy', function() {
   return gulp.src([
     './source/fonts/**/*.ttf',
-    // './source/img/**',
-    // './source/js/**',
-    // './source/*.html'
+    './source/img/**',
+    './source/js/**',
+    './source/*.html'
   ], {
     base: "./source"
   })
@@ -148,12 +148,12 @@ gulp.task('default',
   gulp.series(
   'clean',
   'copy',
-  // 'sprite',
+  'sprite',
   'html:process',
-  // 'js:process',
+  'js:process',
   gulp.parallel(
     'styles',
-    // 'images:decor',
+    'images:decor',
     'images:content',
     'webp',
   ),

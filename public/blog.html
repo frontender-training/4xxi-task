@@ -8,54 +8,508 @@
   </head>
   <body>
 
+    <div style="display:none">
+      <svg xmlns="http://www.w3.org/2000/svg"><symbol id="list" viewbox="0 0 16 14">
+    <path d="M2 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM6 1h10v2H6V1zm0 5h10v2H6V6zm0 5h10v2H6v-2z"></path>
+</symbol><symbol id="soc-fb" viewbox="0 0 8 16">
+    <path d="M5.32 16H1.773V7.999H0V5.242h1.773V3.587c0-2.249 1-3.587 3.844-3.587h2.367v2.758h-1.48c-1.107 0-1.18.385-1.18 1.104l-.005 1.38H8L7.686 8H5.32V16z"></path>
+</symbol><symbol id="soc-in" viewbox="0 0 15 15">
+    <path d="M.378 4.81h2.924v10.189H.378V4.809zm1.388-1.275h-.022C.686 3.535 0 2.756 0 1.77 0 .764.706 0 1.786 0c1.079 0 1.742.762 1.763 1.767 0 .987-.684 1.768-1.783 1.768zM15 15h-3.315V9.726c0-1.38-.519-2.321-1.66-2.321-.871 0-1.356.635-1.582 1.248-.085.22-.072.526-.072.833V15H5.087s.042-9.341 0-10.19h3.284v1.599c.194-.7 1.244-1.697 2.919-1.697 2.078 0 3.71 1.466 3.71 4.621V15z"></path>
+</symbol><symbol id="soc-tw" viewbox="0 0 16 13">
+    <path d="M14.115 2.055A3.282 3.282 0 0 0 15.558.24a6.57 6.57 0 0 1-2.085.797 3.281 3.281 0 0 0-5.677 2.245c0 .257.027.507.083.747A9.319 9.319 0 0 1 1.114.6 3.283 3.283 0 0 0 2.13 4.983a3.295 3.295 0 0 1-1.488-.41v.04c0 1.59 1.131 2.917 2.635 3.217a3.212 3.212 0 0 1-.866.116 3.25 3.25 0 0 1-.617-.058 3.283 3.283 0 0 0 3.066 2.278 6.587 6.587 0 0 1-4.077 1.405c-.265 0-.527-.014-.783-.045A9.298 9.298 0 0 0 5.032 13c6.038 0 9.339-5 9.339-9.337 0-.143-.002-.285-.009-.425A6.647 6.647 0 0 0 16 1.538a6.556 6.556 0 0 1-1.885.517z"></path>
+</symbol><symbol id="soc-vk" viewbox="0 0 20 11">
+    <path d="M10.98 10.954s.362-.039.547-.23c.169-.175.163-.507.163-.507s-.022-1.545.722-1.773c.734-.225 1.676 1.494 2.675 2.155.755.5 1.329.39 1.329.39l2.671-.035s1.397-.083.735-1.142c-.055-.087-.387-.784-1.986-2.215-1.676-1.499-1.45-1.256.566-3.849 1.23-1.579 1.72-2.542 1.567-2.954-.146-.395-1.05-.29-1.05-.29l-3.007.018s-.223-.03-.388.066c-.162.093-.266.311-.266.311s-.476 1.221-1.11 2.26c-1.34 2.192-1.875 2.308-2.094 2.173-.51-.318-.383-1.275-.383-1.955 0-2.125.335-3.01-.65-3.24-.327-.076-.567-.126-1.404-.135-1.073-.01-1.98.004-2.495.246-.343.162-.607.522-.445.543.198.025.648.117.887.43.308.404.297 1.312.297 1.312s.177 2.5-.413 2.81c-.405.214-.961-.22-2.155-2.21C4.68 2.115 4.22.99 4.22.99S4.13.779 3.97.665a1.259 1.259 0 0 0-.462-.179L.652.504S.222.515.065.696c-.14.159-.01.49-.01.49s2.236 5.046 4.77 7.59c2.323 2.33 4.96 2.178 4.96 2.178h1.196z"></path>
+</symbol></svg>
+    </div>
+
     <header class="app-promo">
       <div class="app-promo__wrap">
-        <a class="app-promo__logo" href="https://app.centrallo.com">
-          <img class="app-promo__img" src="img/content/logo-promo.svg" width="32" height="32">
-        </a>
-        <div class="app-promo__description">
-          <span class="app-promo__name">Centrallo</span>
-          <span class="app-promo__google-play">Free on the Google Play</span>
-          <span class="app-promo__app-store">Download it for free on the App Store</span>
+        <div class="app-promo__col">
+          <div class="app-promo__logo">
+            <img class="app-promo__img" src="img/content/logo-promo.svg" width="32" height="32" alt="Centrallo">
+          </div>
+          <div class="app-promo__description">
+            <span class="app-promo__name">Centrallo</span>
+            <span class="app-promo__google-play">Free on the Google Play</span>
+            <span class="app-promo__app-store">Download it for free on the App Store</span>
+          </div>
         </div>
-        <a class="app-promo__download" href="https://app.centrallo.com" aria-label="Download application">Download</a>
-        <button class="app-promo__close" type="button">
-          <span class="visually-hidden">Close</span>
-          <!-- svg icon -->
-        </button>
+        <div class="app-promo__col">
+          <a class="app-promo__download" href="https://app.centrallo.com" aria-label="Download application">Download</a>
+          <button class="app-promo__close" type="button" aria-label="Close promo block">
+            <img class="app-promo__close-icon" src="img/content/close.svg" alt="Close promo block">
+          </button>
+        </div>
       </div>
     </header>
+
     <header class="header">
       <div class="header__wrap">
         <a class="header__logo" href="index.html">
-          <img src="img/content/logo.png" width="133" height="30">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/logo-desktop.webp">
+            <source type="image/webp" srcset="img/content/logo-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/content/logo-desktop.png">
+            <img class="header__img" src="img/content/logo-mobile.png" alt="Centrallo">
+          </picture>
         </a>
-        <nav class="main-nav">
-          <div class="user-nav">
-            <a class="user-nav__link" href="#">
-            </a>
-          </div>
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--signup" href="signup.html" aria-label="Sign up">Sign up <span class="user-nav__signup">for free</span></a>
+              <span class="user-nav__note"> — Start publishing in minutes</span>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--login" href="login.html" aria-label="Log in">Log in</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
-    <main></main>
+    <main class="content">
+
+      <section class="user-info">
+        <div class="user-info__wrap">
+          <div class="user-info__profile">
+            <a href="#" class="user-info__profile-link">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/ava-tablet.webp">
+                <source type="image/webp" srcset="img/content/ava-mobile.webp">
+                <source media="(min-width: 768px)" srcset="img/content/ava-tablet.png">
+                <img class="user-info__avatar" src="img/content/ava-mobile.png" alt="Konstantin Vladimirskiy">
+              </picture>
+              <p class="user-info__name">Konstantin Vladimirskiy</p>
+            </a>
+          </div>
+          <div class="user-info__social">
+            <ul class="social">
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://facebook.com" aria-label="Facebook">
+                  <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
+                    <title id="social__title">Facebook</title>
+                    <use xlink:href="#soc-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+                  <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
+                    <title id="social__title">Twitter</title>
+                    <use xlink:href="#soc-tw"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://vk.com" aria-label="VK">
+                  <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title">
+                    <title id="social__title">VK</title>
+                    <use xlink:href="#soc-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--user-info">
+                <a class="social__link" href="https://www.linkedin.com/" aria-label="Linkedin">
+                  <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title">
+                    <title id="social__title">Linkedin</title>
+                    <use xlink:href="#soc-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sharing-buttons">
+            <a href="#" class="sharing-buttons__link sharing-buttons__link--follow">Add to my Centrallo</a>
+            <a href="#" class="sharing-buttons__link sharing-buttons__link--share">
+              <img class="sharing-buttons__icon" src="img/content/share.svg" alt="Sharing link" width="14" height="14">
+              <span class="sharing-buttons__name-btn">Share</span>
+              <span class="sharing-buttons__text-link">http://cll.io/a6lnu</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes">
+        <div class="notes__wrap">
+        <h1 class="notes__title visually-hidden">Записи блога</h1>
+          <ul class="notes__list">
+
+          <li class="notes__item">
+            <article class="daily-records">
+              <h2 class="daily-records__title">Post-release checklist 2015.02.26</h2>
+              <div class="daily-records__wrap">
+                <ul class="one-day-notes">
+                  <li class="one-day-notes__item one-note one-note--favorite">
+                    <div class="checklist">
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox">
+                        <span class="checklist__option">Referral Accepted and Invited invitations not sorted by A-Z</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox" checked="">
+                        <span class="checklist__option">Inbox shows me 242 items - that includes Done items; Only show me active</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox" checked="">
+                        <span class="checklist__option">Inbox defaults to show done items - it should not</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox">
+                        <span class="checklist__option">Lists default to Show Done - they should not</span>
+                      </label>
+                      <label class="checklist__item">
+                        <input type="checkbox" class="checklist__checkbox">
+                        <span class="checklist__option">Recent view should sort by Created and show no Done items</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <div class="daily-records__info">
+                  <span class="daily-records__update">2h ago</span>
+                  <div class="sharing">
+                    <a class="sharing__link sharing__link--share" href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
+                    </a>
+                    <a class="sharing__link" href="#">
+                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="notes__item">
+            <article class="daily-records">
+              <h2 class="daily-records__title visually-hidden">Notes 2015.03.12</h2>
+                <div class="daily-records__wrap">
+                  <ul class="one-day-notes one-day-notes--lists">
+                    <li class="one-day-notes__item one-day-notes__item--checklists one-note">
+                      <button class="one-note__show" type="button" aria-label="Click me and show note">
+                        <svg class="one-note__icon one-note__icon--important" width="16" height="14" aria-labelledby="one-note__list-title">
+                           <title id="one-note__list-title" "="">Important list</title>
+                        <use xlink:href="#list"></use>
+                        </svg>
+                        Children
+                      </button>
+                      <div class="one-note__desc">
+                        <span class="one-note__count-items">12 items</span>
+                        <span class="one-note__date">7h ago</span>
+                      </div>
+                    </li>
+
+                    <li class="one-day-notes__item one-day-notes__item--checklists one-note">
+                      <button class="one-note__show" type="button" aria-label="Click me and show note">
+                        <svg class="one-note__icon" width="16" height="14" aria-labelledby="one-note__list-title">
+                          <title id="one-note__list-title" "="">List</title>
+                          <use xlink:href="#list"></use>
+                        </svg>
+                        The longest title in the world
+                      </button>
+                      <div class="one-note__desc">
+                        <span class="one-note__count-items">3 items</span>
+                        <span class="one-note__date">Mar 13</span>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="daily-records__info">
+                    <span class="daily-records__update">2h ago</span>
+                    <div class="sharing">
+                      <a class="sharing__lin sharing__link--share" href="http://cll.io/a6lnu">
+                        <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
+                      </a>
+                      <a class="sharing__link" href="#">
+                        <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+            </article>
+          </li>
+
+          <li class="notes__item">
+            <article class="daily-records">
+              <h2 class="daily-records__title visually-hidden">Notes 2015.02.13</h2>
+              <div class="daily-records__wrap">
+                <ul class="one-day-notes one-day-notes--media">
+                  <li class="one-day-notes__item one-note">
+                    <div class="one-note__media">
+                      <ul class="video">
+                        <li class="video__item">
+                          <div class="video__player">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/video-desktop.webp">
+                              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/video-tablet.webp">
+                              <source type="image/webp" srcset="img/content/video-mobile.webp">
+
+                              <source media="(min-width: 1200px)" srcset="img/content/video-desktop.jpg">
+                              <source media="(min-width: 768px)" srcset="img/content/video-tablet.jpg">
+                              <img class="video__img" src="img/content/video-mobile.jpg" alt="video">
+                            </picture>
+                            <button class="video__start-btn" type="button" aria-label="Play video">
+                              <img class="video__start-btn-img" src="img/content/play.svg" alt="Play video">
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="photos">
+                        <li class="photos__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-1.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-1.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-1.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-1.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-1.jpg">
+                            <img class="photos__image" src="img/content/photo-mobile-1.jpg" alt="photo-1">
+                          </picture>
+                        </li>
+                        <li class="photos__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-2.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-2.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-2.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-2.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-2.jpg">
+                            <img class="photos__image" src="img/content/photo-mobile-2.jpg" alt="photo-2">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <div class="calendar-notes">
+                  <button class="calendar-notes__show" type="button" aria-label="Click me and show calendar">
+                    <img class="calendar__icon" src="img/decoration/calendar.svg">
+                    Due on Feb 13, 12:42 PM
+                  </button>
+                </div>
+
+                <div class="daily-records__info">
+                  <span class="daily-records__update">Feb 14</span>
+                  <div class="sharing">
+                    <a class="sharing__link sharing__link--share" href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
+                    </a>
+                    <a class="sharing__link" href="#">
+                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="notes__item">
+            <article class="daily-records">
+              <h2 class="daily-records__title visually-hidden">Notes 2015.01.12</h2>
+              <div class="daily-records__wrap">
+                <ul class="one-day-notes">
+                  <li class="one-day-notes__item one-note">
+                    <div class="one-note__text">
+                      <p>The Dark Knight Rises is a 2012 British-American superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer. Featuring the DC Comics character Batman, the film is the final installment in Nolan's Batman film trilogy, and the sequel to Batman Begins (2005) and The Dark Knight (2008). Christian Bale reprises the lead role of Bruce Wayne/Batman, with a returning cast of allies: Michael Caine as Alfred Pennyworth, Gary Oldman as James Gordon, and Morgan Freeman as Lucius Fox. The film introduces Selina Kyle (Anne Hathaway), a sly, morally ambiguous cat burglar, and Bane (Tom Hardy), a revolutionary bent on destroying Gotham City who forces an older Bruce Wayne to come out of retirement and become Batman again.</p>
+                    </div>
+                    <div class="one-note__media">
+                      <ul class="photos">
+                        <li class="photos__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-3.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-3.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-3.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-3.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-3.jpg">
+                            <img class="photos__image" src="img/content/photo-mobile-3.jpg" alt="photo-3">
+                          </picture>
+                        </li>
+                        <li class="photos__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-4.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-4.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-4.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-4.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-4.jpg">
+                            <img class="photos__image" src="img/content/photo-mobile-4.jpg" alt="photo-4">
+                          </picture>
+                        </li>
+                        <li class="photos__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-5.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-5.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-5.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-5.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-5.jpg">
+                            <img class="photos__image" src="img/content/photo-mobile-5.jpg" alt="photo-5">
+                          </picture>
+                        </li>
+                        <li class="photos__item">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-6.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-6.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-6.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-6.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-6.jpg">
+                            <img class="photos__image" src="img/content/photo-mobile-6.jpg" alt="photo-6">
+                          </picture>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="one-day-notes__item one-note">
+                    <div class="one-note__contacts contacts" id="map">
+                      <picture>
+                        <img class="contacts__map" src="img/content/map.svg" alt="Google map">
+                      </picture>
+                      <div class="contacts__info">
+                        <p class="contacts__title">Merry Bergtraum High School for Business Cariers</p>
+                        <p class="contacts__desc contacts__desc--adress">
+                          <span>411 Pearl St, NY 10038</span><br>
+                          <span>United States of America</span>
+                        </p>
+                        <a class="contacts__link" href="https://www.google.com/maps">Watch location on Google Maps</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="one-day-notes__item one-note">
+                    <ul class="one-note__attachment attachments">
+                      <li class="attachments__item">
+                        <a class="attachments__link" href="https://dropbox.com" aria-label="Download file from dropbox">
+                          <img class="attachments__icon" src="img/content/db.svg" alt="Download file from dropbox">
+                        <a>
+                        <span class="attachments__filename">logo_final.eps</span>
+                      </a></a></li>
+                      <li class="attachments__item">
+                        <a class="attachments__link" href="https://skydrive.com" aria-label="Download file from skydrive">
+                          <img class="attachments__icon" src="img/content/skydrive.svg" alt="Download file from skydrive">
+                        </a>
+                        <span class="attachments__filename">photos_summer.zip</span>
+                      </li>
+                      <li class="attachments__item">
+                        <a class="attachments__link" href="#" aria-label="Download file word document">
+                          <img class="attachments__icon" src="img/content/attach-doc.svg" alt="Download file word document">
+                        </a>
+                        <span class="attachments__filename">work_…hard.doc</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <div class="daily-records__info">
+                  <span class="daily-records__update">Jan 12</span>
+                  <div class="sharing">
+                    <a class="sharing__link sharing__link--share" href="http://cll.io/a6lnu">
+                      <img src="img/content/share.svg" alt="Share link" class="sharing__img" width="16" height="16">
+                    </a>
+                    <a class="sharing__link" href="#">
+                      <img src="img/content/url.svg" alt="Share link" class="sharing__img" width="20" height="20">
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+          </li>
+        </ul>
+        <ul class="other-notes">
+          <li class="other-notes__item other-notes__item--protected">
+            <span class="other-notes__date">Nov 20</span>
+            <span class="other-notes__name other-notes__name--protected">Protected</span>
+          </li>
+          <li class="other-notes__item other-notes__item--archived">
+            <span class="other-notes__date">Nov 21</span>
+            <span class="other-notes__name other-notes__name--archived">Archived</span>
+          </li>
+        </ul>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__wrap">
-        <ul class="social">
+        <div class="footer__copyright">
+          © Centrallo 2015
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Privacy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Terms</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="social footer__social">
           <li class="social__item">
             <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+              <svg class="social__link-icon social__link-icon--twitter" width="16" height="13" aria-labelledby="social__title">
+                <title id="social__title">Twitter</title>
+                <use xlink:href="#soc-tw"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://facebook.com" aria-label="Facebook">
+              <svg class="social__link-icon social__link-icon--facebook" width="8" height="16" aria-labelledby="social__title">
+                <title id="social__title">Facebook</title>
+                <use xlink:href="#soc-fb"></use>
+              </svg>
             </a>
           </li>
-
         </ul>
       </div>
     </footer>
 
+    <div class="overlay hidden"></div>
+    <section class="share-popup hidden">
+      <h2 class="share-popup__title">Share</h2>
+      <button class="share-popup__close" type="button" aria-label="Close">
+        <img class="share-popup__close-icon" src="img/content/close-grey.svg" alt="Close">
+      </button>
+      <div class="share-popup__content">
+        <a class="share-popup__link" tabidex="0">http://cll.io/a6lnu<a>
+        <ul class="share-popup__social social">
+          <li class="social__item share-popup__item share-popup__item--facebook">
+            <a class="social__link" href="https://facebook.com" aria-label="Facebook">
+              <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
+                <title id="social__title">Facebook</title>
+                <use xlink:href="#soc-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item share-popup__item share-popup__item--twitter">
+            <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+              <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
+                <title id="social__title">Twitter</title>
+                <use xlink:href="#soc-tw"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item share-popup__item share-popup__item--vk">
+            <a class="social__link" href="https://vk.com" aria-label="VK">
+              <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title">
+                <title id="social__title">VK</title>
+                <use xlink:href="#soc-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item share-popup__item share-popup__item--linkedin">
+            <a class="social__link" href="https://linkedin.com" aria-label="Linkedin">
+              <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title">
+                <title id="social__title">Linkedin</title>
+                <use xlink:href="#soc-in"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </a></a></div>
+    </section>
+    <script type="application/javascript" src="js/main.min.js"></script>
   </body>
 </html>

@@ -59,14 +59,31 @@
   flex-wrap: wrap;
 }
 
-.social__item--share-popup {
+.share-popup__item {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: $azure;
   margin-right: 20px;
+  line-height: 36px;
 
   &:last-child {
     margin-right: 0;
   }
+
+  &--facebook {
+    background-color: #3a589c;
+  }
+
+  &--twitter {
+    background-color: #29a9e1;
+  }
+
+  &--vk {
+    background-color: #5a7ba0;
+  }
+
+  &--linkedin {
+    background-color: #007bb8;
+  }
 }
+

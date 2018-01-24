@@ -15,9 +15,22 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
 
-  &--archived {
-    opacity: 0.7;
+.other-notes__item--protected {
+
+  &::before {
+    @include triangle(#3c434a);
+  }
+}
+
+
+.other-notes__item--archived {
+  opacity: 0.7;
+
+  &::before {
+    @include triangle(#979da3);
   }
 }
 

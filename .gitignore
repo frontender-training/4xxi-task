@@ -7,5 +7,5 @@
 *.sublime*
 node_modules/
 psd/
-build/
+public/
 Thumbs.db

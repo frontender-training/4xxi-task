@@ -1,5 +1,24 @@
 .one-note {
   width: 100%;
+  position: relative;
+}
+
+.one-note--favorite {
+
+  &::before {
+    @include triangle($tomato);
+    top: -16px;
+    right: -16px;
+
+    @media screen and (min-width: $tablet-widths) {
+      top: -29px;
+      right: -30px;
+    }
+  }
+
+  &::after {
+    @include elem(15px, 14px);
+  }
 }
 
 .one-note__show {
@@ -20,6 +39,13 @@
 
 .one-note__icon {
   margin-right: 7px;
+  width: 16px;
+  height: 14px;
+  fill: $cool-grey;
+
+  &--important {
+    fill: #ed1e23;
+  }
 
   @media screen and (min-width: $tablet-widths) {
     margin-right: 14px;

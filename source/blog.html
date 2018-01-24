@@ -36,7 +36,12 @@
     <header class="header">
       <div class="header__wrap">
         <a class="header__logo" href="index.html">
-          <img class="header__img" src="img/content/logo-mobile@1x.png" width="105" height="23" alt="Centrallo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/logo-desktop.webp">
+            <source type="image/webp" srcset="img/content/logo-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/content/logo-desktop.png">
+            <img class="header__img" src="img/content/logo-mobile.png" alt="Centrallo">
+          </picture>
         </a>
         <nav class="user-nav">
           <ul class="user-nav__list">
@@ -59,7 +64,10 @@
           <div class="user-info__profile">
             <a href="#" class="user-info__profile-link">
               <picture>
-                <img class="user-info__avatar" src="img/content/ava@2x.png" alt="Konstantin Vladimirskiy">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/ava-tablet.webp">
+                <source type="image/webp" srcset="img/content/ava-mobile.webp">
+                <source media="(min-width: 768px)" srcset="img/content/ava-tablet.png">
+                <img class="user-info__avatar" src="img/content/ava-mobile.png" alt="Konstantin Vladimirskiy">
               </picture>
               <p class="user-info__name">Konstantin Vladimirskiy</p>
             </a>
@@ -121,7 +129,7 @@
               <h2 class="daily-records__title">Post-release checklist 2015.02.26</h2>
               <div class="daily-records__wrap">
                 <ul class="one-day-notes">
-                  <li class="one-day-notes__item one-note">
+                  <li class="one-day-notes__item one-note one-note--favorite">
                     <div class="checklist">
                       <label class="checklist__item">
                         <input type="checkbox" class="checklist__checkbox">
@@ -168,7 +176,10 @@
                   <ul class="one-day-notes one-day-notes--lists">
                     <li class="one-day-notes__item one-day-notes__item--checklists one-note">
                       <button class="one-note__show" type="button" aria-label="Click me and show note">
-                        <img class="one-note__icon" src="img/decoration/list.svg"><!-- svg icon -->
+                        <svg class="one-note__icon one-note__icon--important" width="16" height="14" aria-labelledby="one-note__list-title">
+                           <title id="one-note__list-title"">Important list</title>
+                        <use xlink:href="#list"></use>
+                        </svg>
                         Children
                       </button>
                       <div class="one-note__desc">
@@ -179,7 +190,10 @@
 
                     <li class="one-day-notes__item one-day-notes__item--checklists one-note">
                       <button class="one-note__show" type="button" aria-label="Click me and show note">
-                        <img class="one-note__icon" src="img/decoration/list.svg"><!-- svg icon -->
+                        <svg class="one-note__icon" width="16" height="14" aria-labelledby="one-note__list-title">
+                          <title id="one-note__list-title"">List</title>
+                          <use xlink:href="#list"></use>
+                        </svg>
                         The longest title in the world
                       </button>
                       <div class="one-note__desc">
@@ -216,7 +230,13 @@
                         <li class="video__item">
                           <div class="video__player">
                             <picture>
-                              <img class="video__img" src="img/content/video-mobile@1x.jpg" alt="video">
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/video-desktop.webp">
+                              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/video-tablet.webp">
+                              <source type="image/webp" srcset="img/content/video-mobile.webp">
+
+                              <source media="(min-width: 1200px)" srcset="img/content/video-desktop.jpg">
+                              <source media="(min-width: 768px)" srcset="img/content/video-tablet.jpg">
+                              <img class="video__img" src="img/content/video-mobile.jpg" alt="video">
                             </picture>
                             <button class="video__start-btn" type="button" aria-label="Play video">
                               <img class="video__start-btn-img" src="img/content/play.svg" alt="Play video">
@@ -227,12 +247,24 @@
                       <ul class="photos">
                         <li class="photos__item">
                           <picture>
-                            <img  class="photos__image" src="img/content/photo-mobile-1@1x.jpg" alt="photo-1">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-1.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-1.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-1.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-1.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-1.jpg">
+                            <img  class="photos__image" src="img/content/photo-mobile-1.jpg" alt="photo-1">
                           </picture>
                         </li>
                         <li class="photos__item">
                           <picture>
-                            <img  class="photos__image" src="img/content/photo-mobile-2@1x.jpg" alt="photo-2">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-2.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-2.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-2.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-2.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-2.jpg">
+                            <img  class="photos__image" src="img/content/photo-mobile-2.jpg" alt="photo-2">
                           </picture>
                         </li>
                       </ul>
@@ -241,7 +273,7 @@
                 </ul>
                 <div class="calendar-notes">
                   <button class="calendar-notes__show" type="button" aria-label="Click me and show calendar">
-                    <img class="calendar__icon" src="img/decoration/calendar.svg"><!-- svg icon -->
+                    <img class="calendar__icon" src="img/decoration/calendar.svg">
                     Due on Feb 13, 12:42 PM
                   </button>
                 </div>
@@ -274,22 +306,46 @@
                       <ul class="photos">
                         <li class="photos__item">
                           <picture>
-                            <img  class="photos__image" src="img/content/photo-mobile-3@1x.jpg" alt="photo-3">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-3.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-3.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-3.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-3.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-3.jpg">
+                            <img  class="photos__image" src="img/content/photo-mobile-3.jpg" alt="photo-3">
                           </picture>
                         </li>
                         <li class="photos__item">
                           <picture>
-                            <img class="photos__image" src="img/content/photo-mobile-4@1x.jpg" alt="photo-4">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-4.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-4.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-4.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-4.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-4.jpg">
+                            <img  class="photos__image" src="img/content/photo-mobile-4.jpg" alt="photo-4">
                           </picture>
                         </li>
                         <li class="photos__item">
                           <picture>
-                            <img  class="photos__image" src="img/content/photo-mobile-5@1x.jpg" alt="photo-5">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-5.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-5.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-5.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-5.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-5.jpg">
+                            <img  class="photos__image" src="img/content/photo-mobile-5.jpg" alt="photo-5">
                           </picture>
                         </li>
                         <li class="photos__item">
                           <picture>
-                            <img  class="photos__image" src="img/content/photo-mobile-6@1x.jpg" srcset="img/content/photo-6@3x.png 1.8x" alt="photo-6">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-desktop-6.webp">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-tablet-6.webp">
+                            <source type="image/webp" srcset="img/content/photo-mobile-6.webp">
+
+                            <source media="(min-width: 1200px)" srcset="img/content/photo-desktop-6.jpg">
+                            <source media="(min-width: 768px)" srcset="img/content/photo-tablet-6.jpg">
+                            <img  class="photos__image" src="img/content/photo-mobile-6.jpg" alt="photo-6">
                           </picture>
                         </li>
                       </ul>
@@ -409,7 +465,7 @@
       <div class="share-popup__content">
         <a class="share-popup__link" tabidex="0">http://cll.io/a6lnu<a>
         <ul class="share-popup__social social">
-          <li class="social__item social__item--share-popup">
+          <li class="social__item share-popup__item share-popup__item--facebook">
             <a class="social__link" href="https://facebook.com" aria-label="Facebook">
               <svg class="social__link-icon" width="8" height="16" aria-labelledby="social__title">
                 <title id="social__title">Facebook</title>
@@ -417,7 +473,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item social__item--share-popup">
+          <li class="social__item share-popup__item share-popup__item--twitter">
             <a class="social__link" href="https://twitter.com" aria-label="Twitter">
               <svg class="social__link-icon" width="16" height="13" aria-labelledby="social__title">
                 <title id="social__title">Twitter</title>
@@ -425,7 +481,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item social__item--share-popup">
+          <li class="social__item share-popup__item share-popup__item--vk">
             <a class="social__link" href="https://vk.com" aria-label="VK">
               <svg class="social__link-icon" width="20" height="11" aria-labelledby="social__title">
                 <title id="social__title">VK</title>
@@ -433,7 +489,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item social__item--share-popup">
+          <li class="social__item share-popup__item share-popup__item--linkedin">
             <a class="social__link" href="https://linkedin.com" aria-label="Linkedin">
               <svg class="social__link-icon" width="15" height="15" aria-labelledby="social__title">
                 <title id="social__title">Linkedin</title>
