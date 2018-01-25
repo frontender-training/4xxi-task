@@ -4,4 +4,57 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.sharing__link:hover,
+.sharing__link:focus {
+  transform: scale(1.2);
+}
+
+.sharing__link--url:hover + .sharing__hover,
+.sharing__link--url:focus + .sharing__hover {
+  display: inline-flex;
+}
+
+.sharing__hover {
+  @include elem(134px, 36px);
+  line-height: 36px;
+  top: -51px;
+  right: -57px;
+  opacity: 0.7;
+  border-radius: 3px;
+  background-color: $greyish-brown-two;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+
+  &::after {
+    content: ' ';
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 3;
+    border: 4px solid transparent;
+    border-bottom: 4px solid $greyish-brown-two;
+    border-left: 4px solid $greyish-brown-two;
+    bottom: -4px;
+    margin-left: -4px;
+    right: calc(50% - 4px);
+    transform: rotate(-45deg);
+  }
+}
+
+
+.sharing__link-text {
+  width: 106px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  background-color: $dark-blue;
 }
