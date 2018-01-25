@@ -96,6 +96,7 @@ gulp.task('sprite', function () {
 // ЗАДАЧА: Минимизируем JS
 gulp.task('js:process', function () {
   return gulp.src('./source/js/**/*.js')
+    .pipe(gp.jslint())
     .pipe(gp.plumber())
     .pipe(gp.uglify())
     .pipe(gp.rename({ suffix: '.min' }))

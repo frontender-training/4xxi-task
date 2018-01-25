@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path d="M.63 11.641L11.818.453m0 11.188L.63.453" fill="none" stroke="#757e87"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+    <g fill="none" fill-rule="evenodd" stroke="#757e87">
+        <path d="M.63 11.641L11.818.453M11.818 11.641L.63.453"/>
+    </g>
+</svg>
